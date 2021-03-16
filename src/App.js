@@ -1,5 +1,6 @@
 import "./App.css";
-import cara from "./cara.png";
+import logo from "./logo.png";
+import mate from "./mate.png";
 import {
   FaYoutube,
   FaFacebookSquare,
@@ -12,10 +13,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img className="App-header__image" src={cara} alt="foto lsv" />
+        <h1>¡Bienvenido!</h1>
+        <img className="App-header__image" src={logo} alt="foto lsv" />
       </header>
       <main className="main-container">
-        <div className="main-container__youtube">
+        <div className="main-container__btn-up">
           <FaYoutube
             style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
           />
@@ -26,7 +28,7 @@ function App() {
             Youtube
           </a>
         </div>
-        <div className="main-container__facebook">
+        <div className="main-container__btn">
           <FaFacebookSquare
             style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
           />
@@ -37,7 +39,7 @@ function App() {
             Facebook
           </a>
         </div>
-        <div className="main-container__instagram">
+        <div className="main-container__btn">
           <FaInstagram
             style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
           />
@@ -48,7 +50,7 @@ function App() {
             Instagram
           </a>
         </div>
-        <div className="main-container__lsv">
+        <div className="main-container__btn">
           <MdWeb
             style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
           />
@@ -59,7 +61,7 @@ function App() {
             WebSite
           </a>
         </div>
-        <div className="main-container__twitter">
+        <div className="main-container__btn">
           <FaTwitterSquare
             style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
           />
@@ -70,39 +72,43 @@ function App() {
             Twitter
           </a>
         </div>
-        <h3 className="apps-title">Apps</h3>
-        <div className="main-container__lsv">
-          <MdWeb
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
-          <a
-            href="https://leonsonidovirtual.com/lsv-tools/"
-            target="__blank"
-            rel="noopener noreferer">
-            LSV Tools
-          </a>
-        </div>
-        <div className="main-container__lsv">
-          <MdWeb
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
-          <a
-            href="https://lsv-efecto-haas.vercel.app/"
-            target="__blank"
-            rel="noopener noreferer">
-            Efecto Haas
-          </a>
-        </div>
-        <div className="main-container__lsv">
-          <MdWeb
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
-          <a href="/" target="__blank" rel="noopener noreferer">
-            Rider Técnico
-          </a>
+        <div className="container-apps">
+          {/* <h3 className="apps-title">Apps</h3> */}
+          <div className="main-container__btn-app-up">
+            <MdWeb
+              style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
+            />
+            <a
+              href="https://leonsonidovirtual.com/lsv-tools/"
+              target="__blank"
+              rel="noopener noreferer">
+              LSV Tools
+            </a>
+          </div>
+          <div className="main-container__btn-app">
+            <MdWeb
+              style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
+            />
+            <a
+              href="https://lsv-efecto-haas.vercel.app/"
+              target="__blank"
+              rel="noopener noreferer">
+              Efecto Haas
+            </a>
+          </div>
+          <div className="main-container__btn-app">
+            <MdWeb
+              style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
+            />
+            <a href="/" target="__blank" rel="noopener noreferer">
+              Rider Técnico
+            </a>
+          </div>
         </div>
       </main>
+
       <footer>
+        <img src={mate} alt="mate" />
         <a
           href="https://www.instagram.com/leon_contreras_/?hl=es-la"
           rel="noopener noreferer"

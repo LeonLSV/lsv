@@ -1,19 +1,18 @@
 footer {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
-  padding: 30px 0;
+  padding: 10px 0;
   background: #307aba;
   width: 100%;
-  background-image: linear-gradient(
-    43deg,
-    #307aba 0%,
-    #4e71ba 46%,
-    rgb(44, 12, 133) 100%
-  );
-  border-radius: 60px 60px 0 0;
-  margin-top: -60px;
+  background-color: #F5F5F5;
+}
+footer a{
+  color: black;
+  padding-top: 10px;
 }
 
 .App-header {
@@ -26,12 +25,44 @@ footer {
 
 .App-header__image {
   width: 50%;
-  margin-bottom: -30px;
+  margin-bottom: -34px;
+}
+@media (min-width: 360px) {
+  .App-header__image {
+    margin-bottom: -32px;
+  }
+}
+@media (min-width: 375px) {
+  .App-header__image {
+    margin-bottom: -34px;
+  }
+}
+@media (min-width: 411px) {
+  .App-header__image {
+    margin-bottom: -37px;
+  }
+}
+@media (min-width: 425px) {
+  .App-header__image {
+    margin-bottom: -38px;
+  }
 }
 @media (min-width: 427px) {
   .App-header__image {
     width: 30%;
-    margin-bottom: -30px;
+    margin-bottom: -42px;
+  }
+}
+@media (min-width: 1024px) {
+  .App-header__image {
+    width: 30%;
+    margin-bottom: -56px;
+  }
+}
+@media (min-width: 1440px) {
+  .App-header__image {
+    width: 30%;
+    margin-bottom: -80px;
   }
 }
 
@@ -41,182 +72,99 @@ footer {
   justify-content: flex-start;
   align-items: center;
   border-radius: 60px 60px 0 0;
-  padding-bottom: 130px;
-  background-image: linear-gradient(
-    43deg,
-    rgb(22, 21, 21) 0%,
-    black 46%,
-    rgb(0, 0, 20) 100%
-  );
+  background: #F5F5F5;
 }
 
-.main-container__youtube {
-  background-image: linear-gradient(
-    to right,
-    #f6070a 0%,
-    #ad1c1e 30%,
-    #f6070a 70%,
-    #ad1c1e 100%
-  );
-}
-.main-container__youtube {
+.main-container__btn-up {
+  background: #47A871;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 40px;
+  margin-top: 79px;
   padding: 5px 20px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 20px;
+  border-radius: 26px;
   border: none;
   cursor: pointer;
-  width: 250px;
+  width: 237px;
+  height: 52px;
 }
 
-.main-container__youtube:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-container__facebook {
-  background-image: linear-gradient(
-    to right,
-    #2f55a4 0%,
-    #4e71ba 51%,
-    #2f477a 100%
-  );
-}
-.main-container__facebook {
+.main-container__btn {
+  background: #47A871;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 40px;
+  margin-top: 27px;
   padding: 5px 20px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 20px;
+  border-radius: 26px;
   border: none;
   cursor: pointer;
-  width: 250px;
+  width: 237px;
+  height: 52px;
 }
 
-.main-container__facebook:hover {
+.main-container__btn:hover,
+.main-container__btn-up:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
-
-.main-container__instagram {
-  background-image: linear-gradient(
-    to right,
-    #515bd4 0%,
-    #dd2a7b 30%,
-    #f58529 70%,
-    #feda77 100%
-  );
-}
-.main-container__instagram {
+.main-container__btn-app {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 40px;
+  margin-top: 27px;
   padding: 5px 20px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 20px;
-  border: none;
+  border-radius: 26px;
   cursor: pointer;
-  width: 250px;
+  width: 237px;
+  height: 52px;
+  background: transparent;
+  border: 2px solid #F5F5F5;
 }
-
-.main-container__instagram:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-container__twitter {
-  background-image: linear-gradient(
-    to right,
-    #00b9ff 0%,
-    #008abe 30%,
-    #18a1d6 70%,
-    #00acee 100%
-  );
-}
-.main-container__twitter {
+.main-container__btn-app-up{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 40px;
   padding: 5px 20px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 20px;
-  border: none;
+  border-radius: 26px;
   cursor: pointer;
-  width: 250px;
+  width: 237px;
+  height: 52px;
+  background: transparent;
+  border: 2px solid #F5F5F5;
 }
-
-.main-container__twitter:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-container__lsv {
-  background-image: linear-gradient(
-    to right,
-    #559b65 0%,
-    #94c453 30%,
-    #559b65 70%,
-    #94c453 100%
-  );
-}
-.main-container__lsv {
+.container-apps{
+  background: #47A871;
+  width: 100%;
+  height: 400px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 40px;
-  padding: 5px 20px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  width: 250px;
-}
-
-.main-container__lsv:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  justify-content: center;
+  margin-top: 67px;
 }
 
 .apps-title {
