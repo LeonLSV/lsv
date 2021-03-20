@@ -5,7 +5,7 @@ import instagram from "./instagram.png";
 import youtube from "./youtube.png";
 import facebook from "./facebook.png";
 import web from "./web.png";
-import fondo from "./fondo.svg";
+import fondo from "./fondo.png";
 // import fondo1 from "./fondo.png";
 import pc from "./pc.png";
 
@@ -26,7 +26,7 @@ function App() {
             <img
               src={youtube}
               alt="Youtube icono"
-              style={{ marginLeft: "55px", marginRight: "20px" }}
+              style={{ marginLeft: "50px", marginRight: "20px" }}
             />
             Youtube
           </a>
@@ -39,7 +39,7 @@ function App() {
             <img
               src={facebook}
               alt="facebook icono"
-              style={{ marginLeft: "55px", marginRight: "20px" }}
+              style={{ marginLeft: "50px", marginRight: "20px" }}
             />
             Facebook
           </a>
@@ -52,7 +52,7 @@ function App() {
             <img
               src={instagram}
               alt="instagram icono"
-              style={{ marginLeft: "55px", marginRight: "20px" }}
+              style={{ marginLeft: "50px", marginRight: "20px" }}
             />
             Instagram
           </a>
@@ -65,7 +65,7 @@ function App() {
             <img
               src={web}
               alt="Web icono"
-              style={{ marginLeft: "55px", marginRight: "20px" }}
+              style={{ marginLeft: "50px", marginRight: "20px" }}
             />
             WebSite
           </a>
@@ -91,7 +91,7 @@ function App() {
               <img
                 src={pc}
                 alt="Web icono"
-                style={{ marginLeft: "55px", marginRight: "20px" }}
+                style={{ marginLeft: "35px", marginRight: "20px" }}
               />
               LSV Tools
             </a>
@@ -104,7 +104,7 @@ function App() {
               <img
                 src={pc}
                 alt="Web icono"
-                style={{ marginLeft: "55px", marginRight: "20px" }}
+                style={{ marginLeft: "35px", marginRight: "20px" }}
               />
               Efecto Haas
             </a>
@@ -114,7 +114,7 @@ function App() {
               <img
                 src={pc}
                 alt="Web icono"
-                style={{ marginLeft: "55px", marginRight: "20px" }}
+                style={{ marginLeft: "35px", marginRight: "20px" }}
               />
               Rider Técnico
             </a>
