@@ -1,34 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #47A871;
+  background: #47a871;
 }
-@media(min-width: 1000px){
-  body{
+@media (min-width: 1000px) {
+  body {
     background: black;
   }
 }
-.App-header h1{
+.App-header h1 {
   color: white;
 }
 a {
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
 }
 a:hover {
   color: rgb(223, 223, 223);
 }
 body::-webkit-scrollbar {
   width: 10px;
-  background: #47A871;
+  background: #47a871;
 }
 body::-webkit-scrollbar-thumb {
   width: 10px;
   border-radius: 60px;
   background: #1e462f;
 }
-

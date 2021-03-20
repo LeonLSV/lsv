@@ -1,13 +1,13 @@
 import "./App.css";
 import logo from "./logo.png";
-import mate from "./mate.png";
-import {
-  FaYoutube,
-  FaFacebookSquare,
-  FaInstagram,
-  FaTwitterSquare,
-} from "react-icons/fa";
-import { MdWeb } from "react-icons/md";
+import mate from "./mate.svg";
+import instagram from "./instagram.png";
+import youtube from "./youtube.png";
+import facebook from "./facebook.png";
+import web from "./web.png";
+import fondo from "./fondo.svg";
+import fondo1 from "./fondo.png";
+import pc from "./pc.png";
 
 function App() {
   return (
@@ -15,55 +15,64 @@ function App() {
       <header className="App-header">
         <h1>¡Bienvenido!</h1>
         <img className="App-header__image" src={logo} alt="foto lsv" />
+        <img className="App-header__fondo" src={fondo} alt="fondo lsv" />
       </header>
       <main className="main-container">
         <div className="main-container__btn-up">
-          <FaYoutube
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
           <a
             href="https://www.youtube.com/user/focklorepatagonico/videos"
             target="__blank"
             rel="noopener noreferer">
+            <img
+              src={youtube}
+              alt="Youtube icono"
+              style={{ marginLeft: "55px", marginRight: "20px" }}
+            />
             Youtube
           </a>
         </div>
         <div className="main-container__btn">
-          <FaFacebookSquare
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
           <a
             href="https://www.facebook.com/LeonSonidoVirtual"
             target="__blank"
             rel="noopener noreferer">
+            <img
+              src={facebook}
+              alt="facebook icono"
+              style={{ marginLeft: "55px", marginRight: "20px" }}
+            />
             Facebook
           </a>
         </div>
         <div className="main-container__btn">
-          <FaInstagram
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
           <a
             href="https://www.instagram.com/leonsonidovirtual/?hl=es-la"
             target="__blank"
             rel="noopener noreferer">
+            <img
+              src={instagram}
+              alt="instagram icono"
+              style={{ marginLeft: "55px", marginRight: "20px" }}
+            />
             Instagram
           </a>
         </div>
         <div className="main-container__btn">
-          <MdWeb
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-          />
           <a
             href="https://leonsonidovirtual.com/"
             target="__blank"
             rel="noopener noreferer">
+            <img
+              src={web}
+              alt="Web icono"
+              style={{ marginLeft: "55px", marginRight: "20px" }}
+            />
             WebSite
           </a>
         </div>
-        <div className="main-container__btn">
+        {/* <div className="main-container__btn">
           <FaTwitterSquare
-            style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
+             style={{marginLeft: "0px", marginRight: "-20px"}}
           />
           <a
             href="https://twitter.com/virtual_sonido"
@@ -71,36 +80,42 @@ function App() {
             rel="noopener noreferer">
             Twitter
           </a>
-        </div>
+        </div> */}
         <div className="container-apps">
           {/* <h3 className="apps-title">Apps</h3> */}
           <div className="main-container__btn-app-up">
-            <MdWeb
-              style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-            />
             <a
               href="https://leonsonidovirtual.com/lsv-tools/"
               target="__blank"
               rel="noopener noreferer">
+              <img
+                src={pc}
+                alt="Web icono"
+                style={{ marginLeft: "55px", marginRight: "20px" }}
+              />
               LSV Tools
             </a>
           </div>
           <div className="main-container__btn-app">
-            <MdWeb
-              style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-            />
             <a
               href="https://lsv-efecto-haas.vercel.app/"
               target="__blank"
               rel="noopener noreferer">
+              <img
+                src={pc}
+                alt="Web icono"
+                style={{ marginLeft: "55px", marginRight: "20px" }}
+              />
               Efecto Haas
             </a>
           </div>
           <div className="main-container__btn-app">
-            <MdWeb
-              style={{ fontSize: "50px", margin: "0 20px", marginLeft: "40px" }}
-            />
             <a href="/" target="__blank" rel="noopener noreferer">
+              <img
+                src={pc}
+                alt="Web icono"
+                style={{ marginLeft: "55px", marginRight: "20px" }}
+              />
               Rider Técnico
             </a>
           </div>
