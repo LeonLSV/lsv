@@ -6,7 +6,7 @@ import youtube from "./youtube.png";
 import facebook from "./facebook.png";
 import web from "./web.png";
 import fondo from "./fondo.svg";
-import fondo1 from "./fondo.png";
+// import fondo1 from "./fondo.png";
 import pc from "./pc.png";
 
 function App() {
