@@ -98,6 +98,19 @@ function App() {
           </div>
           <div className="main-container__btn-app">
             <a
+              href="https://ridertecnico-lsv.com/"
+              target="__blank"
+              rel="noopener noreferer">
+              <img
+                src={pc}
+                alt="Web icono"
+                style={{ marginLeft: "35px", marginRight: "20px" }}
+              />
+              Rider Técnico
+            </a>
+          </div>
+          <div className="main-container__btn-app">
+            <a
               href="https://lsv-efecto-haas.vercel.app/"
               target="__blank"
               rel="noopener noreferer">
@@ -107,16 +120,6 @@ function App() {
                 style={{ marginLeft: "35px", marginRight: "20px" }}
               />
               Efecto Haas
-            </a>
-          </div>
-          <div className="main-container__btn-app">
-            <a href="/" target="__blank" rel="noopener noreferer">
-              <img
-                src={pc}
-                alt="Web icono"
-                style={{ marginLeft: "35px", marginRight: "20px" }}
-              />
-              Rider Técnico
             </a>
           </div>
         </div>
