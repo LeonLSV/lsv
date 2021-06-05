@@ -71,17 +71,6 @@ function App() {
             WebSite
           </a>
         </div>
-        {/* <div className="main-container__btn">
-          <FaTwitterSquare
-             style={{marginLeft: "0px", marginRight: "-20px"}}
-          />
-          <a
-            href="https://twitter.com/virtual_sonido"
-            target="__blank"
-            rel="noopener noreferer">
-            Twitter
-          </a>
-        </div> */}
         <div className="container-apps">
           <h3 className="apps-title">Prueba mis Apps y Juegos</h3>
 
@@ -113,7 +102,7 @@ function App() {
           </div>
           <div className="main-container__btn-app">
             <a
-              href="https://ridertecnico-lsv.com/"
+              href="https://ridertecnico-lsv.com/feedbacks"
               target="__blank"
               rel="noopener noreferer">
               <img
