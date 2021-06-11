@@ -71,6 +71,19 @@ function App() {
             WebSite
           </a>
         </div>
+        <div className="main-container__btnComunidad">
+          <a
+            href="https://discord.com/invite/qGsshdwqEw"
+            target="__blank"
+            rel="noopener noreferer">
+            {/* <img
+              src={web}
+              alt="Web icono"
+              style={{ marginLeft: "50px", marginRight: "20px" }}
+            /> */}
+            "No Compitas Haz Compitas"
+          </a>
+        </div>
         <div className="container-apps">
           <h3 className="apps-title">Prueba mis Apps y Juegos</h3>
 
