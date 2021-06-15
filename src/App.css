@@ -254,4 +254,7 @@ a {
     height: 300px !important;
     margin: 60px 0;
   }
+  .foto-perfil img {
+    width: 30%;
+  }
 }
