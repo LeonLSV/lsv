@@ -152,21 +152,27 @@ function App() {
           </div>
           <div className="texto-bio">
             <p>
-              Comence trabajando en empresas como "Doblemente Producciones" y
+              Comencé trabajando en empresas como "Doblemente Producciones" y
               "Mosqui Sonido" Argentina. Luego de operar muchas bandas empece a
               trabajar como operador de monitores de "Dios Salve a la reina"
               (Arg), "The End, Tributo a Pink Floyd" (Arg), "Benjamín Amadeo"
-              (Arg), entre otros... Me mude a Guatemala donde trabaje como
-              director del departamento de Audio en "Blessure" y luego trabaje
-              como operador de FOH y MON de "Stephanie Zelaya", "Gaby Moreno",
-              "Cielos Abiertos", "The One Man Band" e hice algunos reemplazos en
-              "Viernes Verde" y "El tambor de la tribu". Actualmente estoy en
-              Colombia, soy Embajador en Latinoamerica de Sennheiser y Allen And
-              Heath y trabajo como Monitorista y técnico de RF de Manuel Turizo.
-              Tambien desarrollo aplicaciones para audio en vivo como "LSV
-              Tools", "Efecto Haas", "Rider Técnico", juego de "Feedbacks",
-              dicto cursos en mi plataforma online leonsonidovirtual.com y soy
-              Lider en la comunidad de audio "No Compitas - Haz Compitas".
+              (Arg), entre otros...{" "}
+            </p>
+            <p>
+              Me mude a Guatemala donde trabaje como director del departamento
+              de Audio en "Blessure" y luego trabaje como operador de FOH y MON
+              de "Stephanie Zelaya", "Gaby Moreno", "Cielos Abiertos", "The One
+              Man Band" e hice algunos reemplazos en "Viernes Verde" y "El
+              tambor de la tribu".
+            </p>
+            <p>
+              Actualmente estoy en Colombia, soy Embajador en Latinoamérica de
+              Sennheiser y Allen And Heath y trabajo como Monitorista y técnico
+              de RF de Manuel Turizo. Tambien desarrollo aplicaciones para audio
+              en vivo como "LSV Tools", "Efecto Haas", "Rider Técnico", juego de
+              "Feedbacks", dicto cursos en mi plataforma online
+              leonsonidovirtual.com y soy Lider en la comunidad de audio "No
+              Compitas - Haz Compitas".
             </p>
           </div>
         </section>
