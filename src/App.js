@@ -167,9 +167,9 @@ function App() {
             </p>
             <p>
               Actualmente estoy en Colombia, soy Embajador en Latinoamérica de
-              Sennheiser y Allen And Heath y trabajo como Monitorista y técnico
-              de RF de Manuel Turizo. Tambien desarrollo aplicaciones para audio
-              en vivo como "LSV Tools", "Efecto Haas", "Rider Técnico", juego de
+              Allen And Heath y trabajo como Monitorista y técnico de RF de
+              Manuel Turizo. Tambien desarrollo aplicaciones para audio en vivo
+              como "LSV Tools", "Efecto Haas", "Rider Técnico", juego de
               "Feedbacks", dicto cursos en mi plataforma online
               leonsonidovirtual.com y soy Lider en la comunidad de audio "No
               Compitas - Haz Compitas".
