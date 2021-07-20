@@ -69,7 +69,7 @@ function App() {
               alt="Web icono"
               style={{ marginLeft: "50px", marginRight: "20px" }}
             />
-            WebSite
+            Mi Escuela
           </a>
         </div>
         <div className="main-container__btnComunidad">
