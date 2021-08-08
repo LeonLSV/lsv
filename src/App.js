@@ -22,6 +22,19 @@ function App() {
       <main className="main-container">
         <div className="main-container__btn-up">
           <a
+            href="https://leonsonidovirtual.com/"
+            target="__blank"
+            rel="noopener noreferer">
+            <img
+              src={web}
+              alt="Web icono"
+              style={{ marginLeft: "50px", marginRight: "20px" }}
+            />
+            Mi Escuela
+          </a>
+        </div>
+        <div className="main-container__btn">
+          <a
             href="https://www.youtube.com/user/focklorepatagonico/videos"
             target="__blank"
             rel="noopener noreferer">
@@ -33,6 +46,7 @@ function App() {
             Youtube
           </a>
         </div>
+
         <div className="main-container__btn">
           <a
             href="https://www.facebook.com/LeonSonidoVirtual"
@@ -59,19 +73,7 @@ function App() {
             Instagram
           </a>
         </div>
-        <div className="main-container__btn">
-          <a
-            href="https://leonsonidovirtual.com/"
-            target="__blank"
-            rel="noopener noreferer">
-            <img
-              src={web}
-              alt="Web icono"
-              style={{ marginLeft: "50px", marginRight: "20px" }}
-            />
-            Mi Escuela
-          </a>
-        </div>
+
         <div className="main-container__btnComunidad">
           <a
             href="https://discord.com/invite/qGsshdwqEw"
