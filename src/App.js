@@ -154,6 +154,14 @@ function App() {
           </div>
           <div className="texto-bio">
             <p>
+              Actualmente estoy en Colombia, trabajo como Ingeniero de Monitores
+              y técnico de RF de Manuel Turizo. Tambien desarrollo aplicaciones
+              para audio en vivo como "LSV Tools", "Efecto Haas", "Rider
+              Técnico", juego de "Feedbacks", dicto cursos en mi plataforma
+              online leonsonidovirtual.com y soy Lider en la comunidad de audio
+              "No Compitas - Haz Compitas".
+            </p>
+            <p>
               Comencé trabajando en empresas como "Doblemente Producciones" y
               "Mosqui Sonido" Argentina. Luego de operar muchas bandas empece a
               trabajar como operador de monitores de "Dios Salve a la reina"
@@ -166,14 +174,6 @@ function App() {
               de "Stephanie Zelaya", "Gaby Moreno", "Cielos Abiertos", "The One
               Man Band" e hice algunos reemplazos en "Viernes Verde" y "El
               tambor de la tribu".
-            </p>
-            <p>
-              Actualmente estoy en Colombia, trabajo como Monitorista y técnico
-              de RF de Manuel Turizo. Tambien desarrollo aplicaciones para audio
-              en vivo como "LSV Tools", "Efecto Haas", "Rider Técnico", juego de
-              "Feedbacks", dicto cursos en mi plataforma online
-              leonsonidovirtual.com y soy Lider en la comunidad de audio "No
-              Compitas - Haz Compitas".
             </p>
           </div>
         </section>
