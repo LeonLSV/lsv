@@ -9,6 +9,9 @@ import fondo from "./fondo.png";
 // import fondo1 from "./fondo.png";
 import pc from "./pc.png";
 import fotoleon from "./fotoleon.png";
+import celu from "./celu.png";
+import apple from "./apple.png";
+import google from "./google.png";
 import ReactPlayer from "react-player";
 
 function App() {
@@ -24,7 +27,7 @@ function App() {
           <a
             href="https://leonsonidovirtual.com/"
             target="__blank"
-            rel="noopener noreferer">
+            rel="noopener noreferrer">
             <img
               src={web}
               alt="Web icono"
@@ -37,7 +40,7 @@ function App() {
           <a
             href="https://www.youtube.com/user/focklorepatagonico/videos"
             target="__blank"
-            rel="noopener noreferer">
+            rel="noopener noreferrer">
             <img
               src={youtube}
               alt="Youtube icono"
@@ -51,7 +54,7 @@ function App() {
           <a
             href="https://www.facebook.com/LeonSonidoVirtual"
             target="__blank"
-            rel="noopener noreferer">
+            rel="noopener noreferrer">
             <img
               src={facebook}
               alt="facebook icono"
@@ -64,7 +67,7 @@ function App() {
           <a
             href="https://www.instagram.com/leonsonidovirtual/?hl=es-la"
             target="__blank"
-            rel="noopener noreferer">
+            rel="noopener noreferrer">
             <img
               src={instagram}
               alt="instagram icono"
@@ -78,36 +81,74 @@ function App() {
           <a
             href="https://discord.com/invite/qGsshdwqEw"
             target="__blank"
-            rel="noopener noreferer">
-            {/* <img
-              src={web}
-              alt="Web icono"
-              style={{ marginLeft: "50px", marginRight: "20px" }}
-            /> */}
+            rel="noopener noreferrer">
             "No Compitas Haz Compitas"
           </a>
         </div>
         <div className="container-apps">
+          <h3 className="apps-title dos">
+            Encontrá mi LSVtools en las tiendas de App Store y GooglePlay
+          </h3>
+
+          <div className="main-container__btn-app-up celu">
+            <a
+              href="https://leonsonidovirtual.com/lsv-tools/"
+              target="__blank"
+              rel="noopener noreferrer">
+              <img
+                src={celu}
+                alt="Web icono"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  marginBottom: "10px",
+                }}
+              />
+            </a>
+          </div>
+
+          <div className="main-container__btn-app celu">
+            <a
+              href="https://apps.apple.com/co/app/lsvtools/id1581526543?l=en"
+              target="__blank"
+              rel="noopener noreferrer">
+              <img
+                src={apple}
+                alt="icono Apple store"
+                style={{
+                  width: "70%",
+                  margin: "0 auto",
+                }}
+              />
+            </a>
+          </div>
+          <div className="main-container__btn-app celu">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.leonsonidovirtual.lsvtools&hl=es_CO&gl=US"
+              target="__blank"
+              rel="noopener noreferrer">
+              <img
+                src={google}
+                alt="icono Apple store"
+                style={{
+                  width: "70%",
+                  margin: "0 auto",
+                }}
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="container-apps abajo">
           <h3 className="apps-title">Prueba mis Apps y Juegos</h3>
 
           <div className="main-container__btn-app-up">
             <a
-              href="https://leonsonidovirtual.com/lsv-tools/"
-              target="__blank"
-              rel="noopener noreferer">
-              <img
-                src={pc}
-                alt="Web icono"
-                style={{ marginLeft: "35px", marginRight: "20px" }}
-              />
-              LSV Tools
-            </a>
-          </div>
-          <div className="main-container__btn-app">
-            <a
               href="https://ridertecnico-lsv.com/"
               target="__blank"
-              rel="noopener noreferer">
+              rel="noopener noreferrer">
               <img
                 src={pc}
                 alt="Web icono"
@@ -120,7 +161,7 @@ function App() {
             <a
               href="https://ridertecnico-lsv.com/feedbacks"
               target="__blank"
-              rel="noopener noreferer">
+              rel="noopener noreferrer">
               <img
                 src={pc}
                 alt="Web icono"
@@ -131,9 +172,22 @@ function App() {
           </div>
           <div className="main-container__btn-app">
             <a
+              href="https://leonsonidovirtual.com/lsv-tools/"
+              target="__blank"
+              rel="noopener noreferrer">
+              <img
+                src={pc}
+                alt="Web icono"
+                style={{ marginLeft: "35px", marginRight: "20px" }}
+              />
+              LSV Tools
+            </a>
+          </div>
+          <div className="main-container__btn-app">
+            <a
               href="https://lsv-efecto-haas.vercel.app/"
               target="__blank"
-              rel="noopener noreferer">
+              rel="noopener noreferrer">
               <img
                 src={pc}
                 alt="Web icono"
@@ -183,7 +237,7 @@ function App() {
         <img src={mate} alt="mate" />
         <a
           href="https://www.instagram.com/leon_contreras_/?hl=es-la"
-          rel="noopener noreferer"
+          rel="noopener noreferrer"
           target="__blank">
           Aplicación creada por @leon_contreras_
         </a>
