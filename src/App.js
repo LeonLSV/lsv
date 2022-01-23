@@ -209,25 +209,69 @@ function App() {
           <div className="texto-bio">
             <p>
               Actualmente estoy en Colombia, trabajo como Ingeniero de Monitores
-              y técnico de RF de Manuel Turizo. Tambien desarrollo aplicaciones
-              para audio en vivo como "LSV Tools", "Efecto Haas", "Rider
-              Técnico", juego de "Feedbacks", dicto cursos en mi plataforma
-              online leonsonidovirtual.com y soy Lider en la comunidad de audio
-              "No Compitas - Haz Compitas".
+              y Técnico de RF de Manuel Turizo desde 2019 a la fecha. Tambien
+              trabajo con otros artistas, desarrollo aplicaciones para audio en
+              vivo como "LSV Tools", "Efecto Haas", "Rider Técnico", juego de
+              "Feedbacks", dicto cursos en mi plataforma online
+              leonsonidovirtual.com y soy Lider en la comunidad de audio "No
+              Compitas - Haz Compitas".
+            </p>
+            <p>Historia: </p>
+            <p>
+              <strong>2011:</strong> Me mudo a Capital Federal, Buenos Aires,
+              Argentina para aprender sobre audio en vivo. A finales de ese año
+              Amiel me consigue mi primer trabajo en una empresa profesional.
+              Trabajo ahí por 3 meses.
             </p>
             <p>
-              Comencé trabajando en empresas como "Doblemente Producciones" y
-              "Mosqui Sonido" Argentina. Luego de operar muchas bandas empece a
-              trabajar como operador de monitores de "Dios Salve a la reina"
-              (Arg), "The End, Tributo a Pink Floyd" (Arg), "Benjamín Amadeo"
-              (Arg), entre otros...{" "}
+              <strong>2012:</strong> Creo el canal de Youtube "León Tutoriales"
+              donde compartía tutoriales de audio y guitarra. Empiezo a trabajar
+              en una serie de TV como capturador de audio el cuál genera mis
+              ingresos para mantenerme en la ciudad.
+            </p>
+
+            <p>
+              <strong>2014:</strong> Empiezo a trabajar con constancia con
+              Matías Martinez y dejo la serie de TV.
             </p>
             <p>
-              Me mude a Guatemala donde trabaje como director del departamento
-              de Audio en "Blessure" y luego trabaje como operador de FOH y MON
-              de "Stephanie Zelaya", "Gaby Moreno", "Cielos Abiertos", "The One
-              Man Band" e hice algunos reemplazos en "Viernes Verde" y "El
-              tambor de la tribu".
+              <strong>2015:</strong> Comienzo a dar capacitaciones presenciales
+              y creo la web "León Sonido Virtual".
+            </p>
+            <p>
+              <strong>2016:</strong> Me alejo un poco de las empresas para
+              trabajar como Ingeniero de monitores de varias bandas: "Dios Salve
+              a la Reina", "The End tributo a Pink Floyd", "Benjamín Amadeo",
+              entre otros.
+            </p>
+            <p>
+              <strong>2017:</strong>A finales de éste año me mudo a Guatemala.
+            </p>
+            <p>
+              <strong>2018:</strong> Nace mi app "LSV TOOLS" (Computadoras).
+              Trabajo como Director del dpto de Audio en Blessure y con varias
+              bandas como operador de Monitores y Sala: "Sthepanie Zelaya",
+              "Viernes Verdes", "Cielos Abiertos", "The One Man Band", "Gabi
+              Moreno", entre otras.
+            </p>
+            <p>
+              <strong>2019:</strong> Comienzo a trabajar como Ingeniero de
+              Monitores y Técnico de RF de Manuel Turizo.
+            </p>
+            <p>
+              <strong>2020:</strong> Por la pandemia no trabajé en audio en vivo
+              más que unos pocos shows. Nace la comunidad "No Compitas, Haz
+              Compitas"
+            </p>
+            <p>
+              <strong>2021:</strong> Desarrollo mis App "LSV Tools" (Celulares y
+              tabletas). También desarrollé mi app "Rider Técnico LSV" para
+              crear Stage Plots.
+            </p>
+            <p>
+              <strong>2022:</strong> En transcurso... Generando contenido para
+              mis redes y canal de Youtube, contando con el apoyo de múltiples
+              marcas de audio en vivo.
             </p>
           </div>
         </section>
