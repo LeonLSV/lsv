@@ -236,23 +236,26 @@ function App() {
             </p>
             <p>
               <strong>2015:</strong> Comienzo a dar capacitaciones presenciales
-              y creo la web "León Sonido Virtual".
+              en Buenos Aires y creo la web "León Sonido Virtual".
             </p>
             <p>
               <strong>2016:</strong> Me alejo un poco de las empresas para
               trabajar como Ingeniero de monitores de varias bandas: "Dios Salve
               a la Reina", "The End tributo a Pink Floyd", "Benjamín Amadeo",
-              entre otros.
+              entre otros. Sigo dando capacitaciones presenciales por muchas
+              provincias Argentinas.
             </p>
             <p>
-              <strong>2017:</strong>A finales de éste año me mudo a Guatemala.
+              <strong>2017:</strong> Doy una capacitación en Bolivia y a finales
+              de éste año me mudo a Guatemala.
             </p>
             <p>
               <strong>2018:</strong> Nace mi app "LSV TOOLS" (Computadoras).
               Trabajo como Director del dpto de Audio en Blessure y con varias
               bandas como operador de Monitores y Sala: "Sthepanie Zelaya",
               "Viernes Verdes", "Cielos Abiertos", "The One Man Band", "Gabi
-              Moreno", entre otras.
+              Moreno", entre otras. Doy varias capacitaciones en Guatemala y
+              también en Ecuador.
             </p>
             <p>
               <strong>2019:</strong> Comienzo a trabajar como Ingeniero de
