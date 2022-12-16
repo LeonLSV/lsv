@@ -12,6 +12,8 @@ import fotoleon from "./fotoleon.png";
 import celu from "./celu.png";
 import apple from "./apple.png";
 import google from "./google.png";
+import tiktok from "./tiktok.png";
+import patreon from "./patreon.png";
 import ReactPlayer from "react-player";
 
 function App() {
@@ -76,15 +78,33 @@ function App() {
             Instagram
           </a>
         </div>
-
-        <div className="main-container__btnComunidad">
+        <div className="main-container__btn">
           <a
-            href="https://discord.com/invite/qGsshdwqEw"
+            href="https://www.tiktok.com/@leonsonidovirtual"
             target="__blank"
             rel="noopener noreferrer">
-            "No Compitas Haz Compitas"
+            <img
+              src={tiktok}
+              alt="Tik Tok icono"
+              style={{ marginLeft: "50px", marginRight: "20px" }}
+            />
+            Tik Tok
           </a>
         </div>
+        <div className="main-container__btn">
+          <a
+            href="https://www.patreon.com/leonsonidovirtual"
+            target="__blank"
+            rel="noopener noreferrer">
+            <img
+              src={patreon}
+              alt="Patreon icono"
+              style={{ marginLeft: "50px", marginRight: "20px" }}
+            />
+            Patreon
+          </a>
+        </div>
+
         <div className="container-apps">
           <h3 className="apps-title dos">
             Encontrá mi LSVtools en las tiendas de App Store y GooglePlay
@@ -199,7 +219,15 @@ function App() {
         </div>
         <ReactPlayer
           className="video-player"
-          url="https://www.youtube.com/watch?v=mYU48lhAtlY&t=590s"
+          url="https://youtu.be/KbfNe-J-IF4"
+        />
+        <ReactPlayer
+          className="video-player"
+          url="https://youtu.be/5l9uzAs3tB4"
+        />
+        <ReactPlayer
+          className="video-player"
+          url="https://youtu.be/8bNI1rX1CKg"
         />
         <section>
           <div className="foto-perfil">
@@ -272,9 +300,9 @@ function App() {
               crear Stage Plots.
             </p>
             <p>
-              <strong>2022:</strong> En transcurso... Generando contenido para
-              mis redes y canal de Youtube, contando con el apoyo de múltiples
-              marcas de audio en vivo.
+              <strong>2022:</strong> Empece a subir un video cada lunes para mi canal de YouTube. 
+              Mejoré mi aplicación LSV Tools y la de creación de stage plots. Y generé alianza más
+              firmes con marcas de la industria para traer más contenido para ustedes. 
             </p>
           </div>
         </section>
