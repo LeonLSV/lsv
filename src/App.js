@@ -9,11 +9,12 @@ import fondo from "./fondo.png";
 // import fondo1 from "./fondo.png";
 import pc from "./pc.png";
 import fotoleon from "./fotoleon.png";
-import celu from "./celu.png";
+import celu from "./lsvtools1.png";
 import apple from "./apple.png";
 import google from "./google.png";
 import tiktok from "./tiktok.png";
 import patreon from "./patreon.png";
+import podcastleonsonidovirtual from "./podcastleonsonidovirtual.png";
 import ReactPlayer from "react-player";
 
 function App() {
@@ -104,6 +105,19 @@ function App() {
             Patreon
           </a>
         </div>
+        <div className="main-container__btn">
+          <a
+            href="https://anchor.fm/leonsonidovirtual"
+            target="__blank"
+            rel="noopener noreferrer">
+            <img
+              src={podcastleonsonidovirtual}
+              alt="Patreon icono"
+              style={{ marginLeft: "50px", marginRight: "20px" }}
+            />
+            Mi Podcast
+          </a>
+        </div>
 
         <div className="container-apps">
           <h3 className="apps-title dos">
@@ -174,7 +188,7 @@ function App() {
                 alt="Web icono"
                 style={{ marginLeft: "35px", marginRight: "20px" }}
               />
-              Rider Técnico
+              Stage Plots
             </a>
           </div>
           <div className="main-container__btn-app">
@@ -187,7 +201,7 @@ function App() {
                 alt="Web icono"
                 style={{ marginLeft: "35px", marginRight: "20px" }}
               />
-              Feedbacks
+              Entrenamiento
             </a>
           </div>
           <div className="main-container__btn-app">
