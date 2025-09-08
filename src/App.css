@@ -250,7 +250,7 @@ a {
 .video-player {
   width: 320px !important;
   height: 185px !important;
-  margin: 60px 0;
+  margin: 30px 0;
 }
 .foto-perfil {
   display: flex;
@@ -270,7 +270,7 @@ a {
   .video-player {
     width: 500px !important;
     height: 300px !important;
-    margin: 60px 0;
+    margin: 30px 0;
   }
   .foto-perfil img {
     width: 30%;

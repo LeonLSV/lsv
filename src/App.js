@@ -28,7 +28,7 @@ function App() {
       <main className="main-container">
         <div className="main-container__btn-up">
           <a
-            href="https://leonsonidovirtual.com/"
+            href="https://www.patreon.com/c/leonsonidovirtual/about"
             target="__blank"
             rel="noopener noreferrer">
             <img
@@ -37,6 +37,19 @@ function App() {
               style={{ marginLeft: "50px", marginRight: "20px" }}
             />
             Mi Escuela
+          </a>
+        </div>
+        <div className="main-container__btn">
+          <a
+            href="https://anchor.fm/leonsonidovirtual"
+            target="__blank"
+            rel="noopener noreferrer">
+            <img
+              src={podcastleonsonidovirtual}
+              alt="Patreon icono"
+              style={{ marginLeft: "50px", marginRight: "20px" }}
+            />
+            Mi Podcast
           </a>
         </div>
         <div className="main-container__btn">
@@ -52,7 +65,6 @@ function App() {
             Youtube
           </a>
         </div>
-
         <div className="main-container__btn">
           <a
             href="https://www.facebook.com/LeonSonidoVirtual"
@@ -90,32 +102,6 @@ function App() {
               style={{ marginLeft: "50px", marginRight: "20px" }}
             />
             Tik Tok
-          </a>
-        </div>
-        <div className="main-container__btn">
-          <a
-            href="https://www.patreon.com/leonsonidovirtual"
-            target="__blank"
-            rel="noopener noreferrer">
-            <img
-              src={patreon}
-              alt="Patreon icono"
-              style={{ marginLeft: "50px", marginRight: "20px" }}
-            />
-            Patreon
-          </a>
-        </div>
-        <div className="main-container__btn">
-          <a
-            href="https://anchor.fm/leonsonidovirtual"
-            target="__blank"
-            rel="noopener noreferrer">
-            <img
-              src={podcastleonsonidovirtual}
-              alt="Patreon icono"
-              style={{ marginLeft: "50px", marginRight: "20px" }}
-            />
-            Mi Podcast
           </a>
         </div>
 
@@ -180,7 +166,7 @@ function App() {
 
           <div className="main-container__btn-app-up">
             <a
-              href="https://ridertecnico-lsv.com/"
+              href="https://leonsonidovirtualpro.com/StagePlot/index.html"
               target="__blank"
               rel="noopener noreferrer">
               <img
@@ -233,15 +219,15 @@ function App() {
         </div>
         <ReactPlayer
           className="video-player"
-          url="https://youtu.be/KbfNe-J-IF4"
+          url="https://youtu.be/FHWr0EFu-pE?si=aDQNQwQXz9ph4-oU"
+        />
+        <ReactPlayer
+          className="video-player"
+          url="https://youtu.be/b9U4QYAaRK0?si=-H-ebwLsPKdlrPxL"
         />
         <ReactPlayer
           className="video-player"
           url="https://youtu.be/5l9uzAs3tB4"
-        />
-        <ReactPlayer
-          className="video-player"
-          url="https://youtu.be/8bNI1rX1CKg"
         />
         <section>
           <div className="foto-perfil">
@@ -318,6 +304,9 @@ function App() {
               Mejoré mi aplicación LSV Tools y la de creación de stage plots. Y generé alianza más
               firmes con marcas de la industria para traer más contenido para ustedes. 
             </p>
+            <p>
+              <strong>2025:</strong> Estoy desarrollando más Apps gratuitas para audio en vivo y ampliando el material educativo en mi escuela de audio en vivo online para tener la mejor y más completa plataforma de información y cursos para los sonidistas de todo el mundo. 
+            </p>
           </div>
         </section>
       </main>
@@ -325,10 +314,10 @@ function App() {
       <footer>
         <img src={mate} alt="mate" />
         <a
-          href="https://www.instagram.com/leon_contreras_/?hl=es-la"
+          href="https://www.instagram.com/leonsonidovirtual/?hl=es-la"
           rel="noopener noreferrer"
           target="__blank">
-          Aplicación creada por @leon_contreras_
+          Aplicación creada por @leonsonidovirtual (2025)
         </a>
       </footer>
     </div>
