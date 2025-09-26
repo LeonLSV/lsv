@@ -192,7 +192,7 @@ function App() {
           </div>
           <div className="main-container__btn-app">
             <a
-              href="https://leonsonidovirtual.com/lsv-tools/"
+              href="https://leonsonidovirtualpro.com/lsvtools/index.html"
               target="__blank"
               rel="noopener noreferrer">
               <img
