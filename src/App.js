@@ -69,6 +69,11 @@ const sections = [
     title: "Redes",
     items: [
       {
+        label: "Mi Web",
+        hrefWeb: "https://leonsonidovirtualpro.com",
+        icon: "🌎",
+      },
+      {
         label: "Instagram",
         hrefWeb: "https://www.instagram.com/leonsonidovirtual/?hl=es-la",
         deeplink: "instagram://user?username=leonsonidovirtual",
@@ -322,7 +327,7 @@ export default function App() {
   <Bio />
   <a
     className="btn"
-    href="https://leonsonidovirtual.com"
+    href="https://leonsonidovirtualpro.com/sobre/sobre.html"
     target="_blank"
     rel="noopener noreferrer"
   >

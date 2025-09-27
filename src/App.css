@@ -95,9 +95,9 @@ body{
 .dock{
   position:fixed;left:50%;transform:translateX(-50%);
   bottom:14px;width:min(680px,94%);display:flex;justify-content:space-around;gap:10px;
-  background:rgba(255,255,255,.93);backdrop-filter:blur(8px);padding:10px;border-radius:18px;box-shadow:var(--shadow);
+  background:black;backdrop-filter:blur(8px);padding:10px;border-radius:18px;box-shadow:var(--shadow);
 }
-.dock a{text-decoration:none;color:#111;font-weight:700}
+.dock a{text-decoration:none;color:whitesmoke;font-weight:700}
 
 /* FOOTER */
 .footer{margin:40px 0 80px;color:var(--muted);font-size:12px;text-align:center}
