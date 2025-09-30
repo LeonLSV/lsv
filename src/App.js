@@ -34,7 +34,7 @@ const sections = [
     // Primero las más populares
     items: [
       {
-        label: "LSV StagePlot",
+        label: "APP LSV StagePlot",
         hrefWeb: "https://leonsonidovirtualpro.com/StagePlot/index.html",
         icon: "🎛️",
       },
@@ -102,6 +102,16 @@ const sections = [
         hrefWeb: "https://anchor.fm/leonsonidovirtual",
         icon: "🎙️",
       },
+    ],
+  },
+  {
+    title: "Cursos",
+    items: [
+      {
+        label: "Curso de RF",
+        hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
+        icon: "📡",
+      }
     ],
   },
 ];
@@ -236,7 +246,7 @@ function StoreBadges() {
 
 function Bio() {
   const [expanded, setExpanded] = useState(false);
-  const items = expanded ? bioTimeline : bioTimeline.slice(0, 6); // muestra los 6 primeros y luego “ver más”
+  const items = expanded ? bioTimeline : bioTimeline.slice(0, 3); // muestra los 6 primeros y luego “ver más”
 
   return (
     <>
@@ -344,7 +354,7 @@ export default function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          StagePlot
+          APP StagePlot
         </a>
         <a href="https://leonsonidovirtualpro.com/lsvtools/index.html" target="_blank" rel="noopener noreferrer">
           LSV Tools
