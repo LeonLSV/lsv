@@ -10,6 +10,8 @@ import fondo from "./fondo.png";
 import pc from "./pc.png";
 import fotoleon from "./fotoleon.png";
 import celu from "./lsvtools1.png";
+import stageplot from "./LSVSTAGEPLOT.png";
+import lsvtools from "./lsvtools9.png";
 import apple from "./apple.png";
 import google from "./google.png";
 import tiktok from "./tiktok.png";
@@ -37,11 +39,48 @@ const sections = [
         label: "APP LSV StagePlot",
         hrefWeb: "https://leonsonidovirtualpro.com/StagePlot/index.html",
         icon: "🎛️",
+        iconSrc: stageplot,
       },
       {
-        label: "LSV Tools",
+        label: " APP LSV Tools",
         hrefWeb: "https://leonsonidovirtualpro.com/lsvtools/index.html",
         icon: "🧰",
+        iconSrc: lsvtools,
+      },
+      {
+        label: " APP Test L y R",
+        hrefWeb: "https://apps.apple.com/co/app/lsv-generador/id6737373130",
+        icon: "🧰",
+      },
+      {
+        label: " APP LSV RTA",
+        hrefWeb: "https://apps.apple.com/co/app/lsv-rta/id6743376725",
+        icon: "🧰",
+      },
+      {
+        label: " APP LSV SetList",
+        hrefWeb: "https://apps.apple.com/co/app/lsv-setlist/id6743781110",
+        icon: "🧰",
+      },
+      {
+        label: " APP LSV CueList",
+        hrefWeb: "https://apps.apple.com/co/app/lsv-cuelist/id6744004350",
+        icon: "🧰",
+      },
+      {
+        label: " APP LSV Tempo",
+        hrefWeb: "https://apps.apple.com/co/app/lsv-tempo/id6743356806",
+        icon: "🧰",
+      },
+      {
+        label: "Conversor RF Tiny SA",
+        hrefWeb: "https://leonsonidovirtualpro.com/conversortinysa/tinysa.html",
+        icon: "🧠",
+      },
+      {
+        label: "Recall Sheet",
+        hrefWeb: "https://leonsonidovirtualpro.com/setStudio/",
+        icon: "🧠",
       },
       {
         label: "Efecto Haas",
@@ -49,7 +88,7 @@ const sections = [
         icon: "🧠",
       },
       {
-        label: "Entrenamiento (Feedbacks)",
+        label: "Entrenamiento auditivo",
         hrefWeb: "https://ridertecnico-lsv.com/feedbacks",
         icon: "🏋️",
       },
@@ -72,12 +111,14 @@ const sections = [
         label: "Mi Web",
         hrefWeb: "https://leonsonidovirtualpro.com",
         icon: "🌎",
+        iconSrc: web,
       },
       {
         label: "Instagram",
         hrefWeb: "https://www.instagram.com/leonsonidovirtual/?hl=es-la",
         deeplink: "instagram://user?username=leonsonidovirtual",
         icon: "📸",
+        iconSrc: instagram,
       },
       {
         label: "YouTube",
@@ -85,22 +126,26 @@ const sections = [
           "https://www.youtube.com/user/focklorepatagonico/videos",
         // El deeplink de YouTube real cambia según el canal; dejá el web si no tenés el ID
         icon: "▶️",
+        iconSrc: youtube,
       },
       {
         label: "TikTok",
         hrefWeb: "https://www.tiktok.com/@leonsonidovirtual",
         deeplink: "tiktok://user/@leonsonidovirtual",
         icon: "🎵",
+        iconSrc: tiktok,
       },
       {
         label: "Facebook",
         hrefWeb: "https://www.facebook.com/LeonSonidoVirtual",
         icon: "👍",
+        iconSrc: facebook,
       },
       {
         label: "Podcast",
         hrefWeb: "https://anchor.fm/leonsonidovirtual",
         icon: "🎙️",
+        iconSrc: podcastleonsonidovirtual,
       },
     ],
   },
@@ -201,7 +246,7 @@ function openDeeplinkOrWeb(hrefWeb, deeplink) {
 }
 
 // --- Componentes atómicos ---
-function LinkCard({ label, hrefWeb, deeplink, icon }) {
+function LinkCard({ label, hrefWeb, deeplink, icon, iconSrc }) {
   return (
     <button
       className="linkcard"
@@ -209,7 +254,17 @@ function LinkCard({ label, hrefWeb, deeplink, icon }) {
       aria-label={label}
     >
       <span className="linkcard__icon" aria-hidden>
-        {icon}
+        {iconSrc ? (
+          <img
+            src={iconSrc}
+            alt=""
+            className="linkcard__icon-img"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <span>{icon}</span>
+        )}
       </span>
       <span className="linkcard__label">{label}</span>
       <span className="linkcard__chev" aria-hidden>
@@ -218,6 +273,7 @@ function LinkCard({ label, hrefWeb, deeplink, icon }) {
     </button>
   );
 }
+
 
 function StoreBadges() {
   return (
