@@ -16,6 +16,11 @@ import apple from "./apple.png";
 import google from "./google.png";
 import tiktok from "./tiktok.png";
 import patreon from "./patreon.png";
+import bpm from "./bpm.png";
+import cuelist from "./cuelist.png";
+import setlist from "./setlist.png";
+import rta from "./rta.png";
+import testlr from "./testlr.png";
 import podcastleonsonidovirtual from "./podcastleonsonidovirtual.png";
 import ReactPlayer from "react-player";
 import { useState } from "react";
@@ -51,36 +56,41 @@ const sections = [
         label: " APP Test L y R",
         hrefWeb: "https://apps.apple.com/co/app/lsv-generador/id6737373130",
         icon: "🧰",
+        iconSrc: testlr,
       },
       {
         label: " APP LSV RTA",
         hrefWeb: "https://apps.apple.com/co/app/lsv-rta/id6743376725",
         icon: "🧰",
+        iconSrc: rta,
       },
       {
         label: " APP LSV SetList",
         hrefWeb: "https://apps.apple.com/co/app/lsv-setlist/id6743781110",
         icon: "🧰",
+        iconSrc: setlist,
       },
       {
         label: " APP LSV CueList",
         hrefWeb: "https://apps.apple.com/co/app/lsv-cuelist/id6744004350",
         icon: "🧰",
+        iconSrc: cuelist,
       },
       {
         label: " APP LSV Tempo",
         hrefWeb: "https://apps.apple.com/co/app/lsv-tempo/id6743356806",
         icon: "🧰",
+        iconSrc: bpm,
       },
       {
         label: "Conversor RF Tiny SA",
         hrefWeb: "https://leonsonidovirtualpro.com/conversortinysa/tinysa.html",
-        icon: "🧠",
+        icon: "📻",
       },
       {
         label: "Recall Sheet",
         hrefWeb: "https://leonsonidovirtualpro.com/setStudio/",
-        icon: "🧠",
+        icon: "📋",
       },
       {
         label: "Efecto Haas",
@@ -101,6 +111,7 @@ const sections = [
         label: "Mi Escuela",
         hrefWeb: "https://www.patreon.com/c/leonsonidovirtual/about",
         icon: "🎓",
+        iconSrc: patreon,
       },
     ],
   },
