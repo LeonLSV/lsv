@@ -9,7 +9,7 @@ import fondo from "./fondo.png";
 // import fondo1 from "./fondo.png";
 import pc from "./pc.png";
 import fotoleon from "./fotoleon.png";
-import celu from "./lsvtools1.png";
+import dante from "./dante.png";
 import stageplot from "./LSVSTAGEPLOT.png";
 import lsvtools from "./lsvtools9.png";
 import apple from "./apple.png";
@@ -80,7 +80,7 @@ const sections = [
         label: " APP LSV Tempo",
         hrefWeb: "https://apps.apple.com/co/app/lsv-tempo/id6743356806",
         icon: "🧰",
-        iconSrc: bpm,
+ 
       },
       {
         label: "Conversor RF Tiny SA",
@@ -105,14 +105,13 @@ const sections = [
     ],
   },
   {
-    title: "Escuela Online",
+    title: "Cursos",
     items: [
       {
-        label: "Mi Escuela",
-        hrefWeb: "https://www.patreon.com/c/leonsonidovirtual/about",
-        icon: "🎓",
-        iconSrc: patreon,
-      },
+        label: "Curso de RF",
+        hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
+        icon: "📡",
+      }
     ],
   },
   {
@@ -123,6 +122,12 @@ const sections = [
         hrefWeb: "https://leonsonidovirtualpro.com",
         icon: "🌎",
         iconSrc: web,
+      },
+      {
+        label: "Podcast",
+        hrefWeb: "https://anchor.fm/leonsonidovirtual",
+        icon: "🎙️",
+        iconSrc: podcastleonsonidovirtual,
       },
       {
         label: "Instagram",
@@ -152,22 +157,23 @@ const sections = [
         icon: "👍",
         iconSrc: facebook,
       },
-      {
-        label: "Podcast",
-        hrefWeb: "https://anchor.fm/leonsonidovirtual",
-        icon: "🎙️",
-        iconSrc: podcastleonsonidovirtual,
-      },
     ],
   },
   {
-    title: "Cursos",
+    title: "Escuela Online",
     items: [
       {
-        label: "Curso de RF",
-        hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
-        icon: "📡",
-      }
+        label: "Mi Escuela",
+        hrefWeb: "https://www.patreon.com/c/leonsonidovirtual/about",
+        icon: "🎓",
+        iconSrc: patreon,
+      },
+      {
+        label: "Entrenador oficial Dante (Audinate)",
+        hrefWeb: "https://www.getdante.com/meet-dante/partners/dante-certified-training-partners/",
+        icon: "🎓",
+        iconSrc: dante,
+      },
     ],
   },
 ];
@@ -175,9 +181,9 @@ const sections = [
 // --- BIO (texto mejorado y cronología) ---
 const bioIntro = `Actualmente estoy en Colombia. Trabajo como Ingeniero de Monitores y
 Técnico de RF de Manuel Turizo desde 2019. También colaboro con otros artistas y
-desarrollo aplicaciones para audio en vivo como "LSV Tools", "Efecto Haas" y
-"Rider Técnico", además del juego de "Feedbacks". Dicto cursos en mi plataforma
-online.`;
+desarrollo aplicaciones para audio en vivo como "LSV Tools" y
+"LSV StagePlot", además del juego de "Feedbacks". Dicto cursos en mi plataforma
+online y soy entrenador oficial de "Dante" de Audinate .`;
 
 const bioTimeline = [
   {
@@ -237,7 +243,7 @@ const bioTimeline = [
   {
     year: "2025",
     text:
-      "Desarrollo más apps gratuitas para audio en vivo y amplío el material educativo en mi escuela online para construir la plataforma más completa para sonidistas.",
+      "Me mencionan como entrenador oficial de Dante (Audinate), la solución más popular de audio sobre IP. Sigo desarrollando más apps gratuitas para audio en vivo y amplío el material educativo en mi escuela online para construir la plataforma más completa para sonidistas.",
   },
 ];
 
