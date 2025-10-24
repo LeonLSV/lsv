@@ -38,49 +38,47 @@ const storeLinks = {
 const sections = [
   {
     title: "Apps & Herramientas",
-    // Primero las más populares
     items: [
       {
-        label: "APP LSV StagePlot",
+        label: "LSV StagePlot",
         hrefWeb: "https://leonsonidovirtualpro.com/StagePlot/index.html",
         icon: "🎛️",
         iconSrc: stageplot,
       },
       {
-        label: " APP LSV Tools",
+        label: "APP LSV Tools",
         hrefWeb: "https://leonsonidovirtualpro.com/lsvtools/index.html",
         icon: "🧰",
         iconSrc: lsvtools,
       },
       {
-        label: " APP Test L y R",
+        label: "APP Test L y R",
         hrefWeb: "https://apps.apple.com/co/app/lsv-generador/id6737373130",
         icon: "🧰",
         iconSrc: testlr,
       },
       {
-        label: " APP LSV RTA",
+        label: "APP LSV RTA",
         hrefWeb: "https://apps.apple.com/co/app/lsv-rta/id6743376725",
         icon: "🧰",
         iconSrc: rta,
       },
       {
-        label: " APP LSV SetList",
+        label: "APP LSV SetList",
         hrefWeb: "https://apps.apple.com/co/app/lsv-setlist/id6743781110",
         icon: "🧰",
         iconSrc: setlist,
       },
       {
-        label: " APP LSV CueList",
+        label: "APP LSV CueList",
         hrefWeb: "https://apps.apple.com/co/app/lsv-cuelist/id6744004350",
-        icon: "🧰",
+        icon: "📝",
         iconSrc: cuelist,
       },
       {
-        label: " APP LSV Tempo",
+        label: "APP LSV Tempo",
         hrefWeb: "https://apps.apple.com/co/app/lsv-tempo/id6743356806",
-        icon: "🧰",
- 
+        icon: "⏰",
       },
       {
         label: "Conversor RF Tiny SA",
@@ -112,6 +110,27 @@ const sections = [
         hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
         icon: "📡",
       }
+    ],
+  },
+  {
+    title: "Música para optimizar sistemas",
+    items: [
+      {
+        label: "Recomendaciones musiscales",
+        hrefWeb: "https://leonsonidovirtualpro.com/musica.html",
+        icon: "🎵",
+      }
+    ],
+  },
+    {
+    title: "Lista de herramientas para el sonidista",
+    items: [
+      {
+        label: "Recomendaciones de Gira",
+        hrefWeb: "https://leonsonidovirtualpro.com/herramientas.html",
+        icon: "🎶",
+      },
+
     ],
   },
   {
@@ -160,7 +179,7 @@ const sections = [
     ],
   },
   {
-    title: "Escuela Online",
+    title: "Educación Online",
     items: [
       {
         label: "Mi Escuela",
@@ -174,6 +193,17 @@ const sections = [
         icon: "🎓",
         iconSrc: dante,
       },
+    ],
+  },
+  {
+    title: "Mi Diario de Gira",
+    items: [
+      {
+        label: "Agenda Diario de Gira",
+        hrefWeb: "https://leonsonidovirtualpro.com/diariodegira.html",
+        icon: "📓",
+      },
+
     ],
   },
 ];
