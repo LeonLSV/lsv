@@ -8,7 +8,7 @@ import web from "./web.png";
 import fondo from "./fondo.png";
 // import fondo1 from "./fondo.png";
 import pc from "./pc.png";
-import fotoleon from "./fotoleon.png";
+import school from "./school.png";
 import dante from "./dante.png";
 import stageplot from "./LSVSTAGEPLOT.png";
 import lsvtools from "./lsvtools9.png";
@@ -21,6 +21,7 @@ import cuelist from "./cuelist.png";
 import setlist from "./setlist.png";
 import rta from "./rta.png";
 import testlr from "./testlr.png";
+import stage from "./stage.png";
 import podcastleonsonidovirtual from "./podcastleonsonidovirtual.png";
 import ReactPlayer from "react-player";
 import { useState } from "react";
@@ -126,7 +127,7 @@ const sections = [
     title: "Lista de herramientas para el sonidista",
     items: [
       {
-        label: "Recomendaciones de Gira",
+        label: "Recomendaciones de herramientas",
         hrefWeb: "https://leonsonidovirtualpro.com/herramientas.html",
         icon: "🎶",
       },
@@ -193,13 +194,18 @@ const sections = [
         icon: "🎓",
         iconSrc: dante,
       },
+      {
+        label: "Amigo Shure",
+        hrefWeb: "https://p.shure.com/amigos-shure",
+        icon: "🎤",
+      },
     ],
   },
   {
     title: "Mi Diario de Gira",
     items: [
       {
-        label: "Agenda Diario de Gira",
+        label: "Agenda 'Diario de Gira'",
         hrefWeb: "https://leonsonidovirtualpro.com/diariodegira.html",
         icon: "📓",
       },
@@ -386,33 +392,70 @@ export default function App() {
           <span className="nowrap">cursos</span>
         </h1>
 
-        {/* CTAs: priorizamos StagePlot, LSV Tools y Escuela */}
-        <div className="hero__cta">
-          <a
-            className="btn btn--primary"
-            href="https://leonsonidovirtualpro.com/StagePlot/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Usar LSV StagePlot
-          </a>
-          <a
-            className="btn"
-            href="https://leonsonidovirtualpro.com/lsvtools/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Descargar LSV Tools
-          </a>
-          <a
-            className="btn"
-            href="https://www.patreon.com/c/leonsonidovirtual/about"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mi Escuela Online
-          </a>
-        </div>
+        {/* CTAs con miniatura fuera del botón */}
+<div className="hero__cta hero__cta--withthumbs">
+  <div className="ctaTile">
+    <a
+      className="ctaThumb"
+      href="https://leonsonidovirtualpro.com/StagePlot/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir LSV StagePlot"
+    >
+      <img src={stage} alt="" loading="lazy" decoding="async" />
+    </a>
+    <a
+      className="btn btn--primary btn--small"
+      href="https://leonsonidovirtualpro.com/StagePlot/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Usar LSV StagePlot
+    </a>
+  </div>
+
+  <div className="ctaTile">
+    <a
+      className="ctaThumb"
+      href="https://leonsonidovirtualpro.com/lsvtools/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir LSV Tools"
+    >
+      <img src={lsvtools} alt="" loading="lazy" decoding="async" />
+    </a>
+    <a
+      className="btn btn--small"
+      href="https://leonsonidovirtualpro.com/lsvtools/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Descargar LSV Tools
+    </a>
+  </div>
+
+  <div className="ctaTile">
+    <a
+      className="ctaThumb"
+      href="https://www.patreon.com/c/leonsonidovirtual/about"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir Escuela Online"
+    >
+      <img src={school} alt="" loading="lazy" decoding="async" />
+    </a>
+    <a
+      className="btn btn--small"
+      href="https://www.patreon.com/c/leonsonidovirtual/about"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Mi Escuela Online
+    </a>
+  </div>
+</div>
+
+
       </header>
 
       <main className="nav" role="navigation" aria-label="Secciones de enlaces">

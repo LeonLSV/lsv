@@ -175,3 +175,90 @@ body{
   object-fit: contain;
   image-rendering: auto;
 }
+
+
+/* CTAs con miniaturas rectangulares */
+.btn--cta{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 14px 10px 10px; /* un pelín más de aire por la miniatura */
+  min-height:60px;
+}
+
+.btn__thumb{
+  width:96px;          /* miniatura rectangular */
+  height:56px;         /* ~16:9 */
+  object-fit:cover;    /* recorta sin deformar */
+  border-radius:12px;
+  flex-shrink:0;
+  box-shadow:0 4px 14px rgba(0,0,0,.15);
+  background:#fff;     /* por si la imagen tiene transparente */
+}
+
+.btn__text{
+  display:inline-block;
+  font-weight:700;
+  line-height:1.1;
+}
+
+/* Ajustes responsive para móviles angostos */
+@media (max-width: 420px){
+  .btn__thumb{ width:84px; height:50px; }
+}
+
+/* Si querés que las tres queden en fila en desktop y en dos/una en mobile: */
+.hero__cta{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+/* Grid responsive para las 3 tarjetas */
+.hero__cta--withthumbs{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Tarjeta contenedora del thumb + botón */
+.ctaTile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Miniatura fuera del botón (rectangular) */
+.ctaThumb{
+  display: block;
+  width: 170px;       /* ajustá a gusto */
+  height: 95px;      /* ~16:9 */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  background: #fff;
+  transition: transform .08s ease, box-shadow .18s ease;
+}
+.ctaThumb:hover{ box-shadow: 0 12px 28px rgba(0,0,0,.16) }
+.ctaThumb:active{ transform: translateY(1px) }
+.ctaThumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botón pequeño para que no crezca */
+.btn--small{
+  padding: 10px 14px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Ajuste mobile angosto */
+@media (max-width:420px){
+  .ctaThumb{ width: 180px; height: 100px; }
+}
