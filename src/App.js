@@ -1,13 +1,12 @@
 import "./App.css";
 import logo from "./logo.png";
-import mate from "./mate.svg";
+// import mate from "./mate.svg";
 import instagram from "./instagram.png";
 import youtube from "./youtube.png";
 import facebook from "./facebook.png";
 import web from "./web.png";
 import fondo from "./fondo.png";
 // import fondo1 from "./fondo.png";
-import pc from "./pc.png";
 import school from "./school.png";
 import dante from "./dante.png";
 import stageplot from "./LSVSTAGEPLOT.png";
@@ -16,14 +15,13 @@ import apple from "./apple.png";
 import google from "./google.png";
 import tiktok from "./tiktok.png";
 import patreon from "./patreon.png";
-import bpm from "./bpm.png";
 import cuelist from "./cuelist.png";
 import setlist from "./setlist.png";
 import rta from "./rta.png";
 import testlr from "./testlr.png";
 import stage from "./stage.png";
 import podcastleonsonidovirtual from "./podcastleonsonidovirtual.png";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import { useState } from "react";
 
 
