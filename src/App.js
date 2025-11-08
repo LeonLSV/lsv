@@ -359,7 +359,7 @@ function Bio() {
     <>
       <p className="about__txt">{bioIntro}</p>
       <h3 className="timeline__heading">Historia</h3>
-      <ul className="timeline" role="list">
+      <ul className="timeline">
         {items.map((it) => (
           <li className="timeline__item" key={it.year}>
             <span className="timeline__year">{it.year}:</span>
