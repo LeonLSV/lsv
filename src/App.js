@@ -42,7 +42,7 @@ const sections = [
     items: [
       {
         label: "LSV StagePlot",
-        hrefWeb: "https://leonsonidovirtualpro.com/StagePlot/index.html",
+        hrefWeb: "https://leonsonidovirtualpro.com/lsvstageplot.html",
         icon: "🎛️",
         iconSrc: stageplot,
       },
@@ -397,7 +397,7 @@ export default function App() {
   <div className="ctaTile">
     <a
       className="ctaThumb"
-      href="https://leonsonidovirtualpro.com/StagePlot/index.html"
+      href="https://leonsonidovirtualpro.com/lsvstageplot.html"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Abrir LSV StagePlot"
@@ -406,7 +406,7 @@ export default function App() {
     </a>
     <a
       className="btn btn--primary btn--small"
-      href="https://leonsonidovirtualpro.com/StagePlot/index.html"
+      href="https://leonsonidovirtualpro.com/lsvstageplot.html"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -496,7 +496,7 @@ export default function App() {
       {/* Dock inferior fijo para accesos rápidos */}
       <div className="dock" role="navigation" aria-label="Accesos rápidos">
         <a
-          href="https://leonsonidovirtualpro.com/StagePlot/index.html"
+          href="https://leonsonidovirtualpro.com/lsvstageplot.html"
           target="_blank"
           rel="noopener noreferrer"
         >
