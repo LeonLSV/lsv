@@ -36,6 +36,16 @@ const storeLinks = {
 
 const sections = [
   {
+    title: "Concurso",
+    items: [
+      {
+        label: "Cariturizá tu StagePlot",
+        hrefWeb: "https://leonsonidovirtualpro.com/concurso.html",
+        icon: "💥",
+      }
+    ],
+  },
+  {
     title: "Apps & Herramientas",
     items: [
       {
