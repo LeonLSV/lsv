@@ -118,6 +118,11 @@ const sections = [
         label: "Curso de RF",
         hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
         icon: "📡",
+      },
+      {
+        label: "Curso de Optimización de sistemas",
+        hrefWeb: "https://leonsonidovirtualpro.com/cursos/optimizaciondesistemas.html",
+        icon: "🔊",
       }
     ],
   },
