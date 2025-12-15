@@ -36,16 +36,6 @@ const storeLinks = {
 
 const sections = [
   {
-    title: "Concurso",
-    items: [
-      {
-        label: "Cariturizá tu StagePlot",
-        hrefWeb: "https://leonsonidovirtualpro.com/concurso.html",
-        icon: "💥",
-      }
-    ],
-  },
-  {
     title: "Apps & Herramientas",
     items: [
       {
@@ -123,6 +113,12 @@ const sections = [
         label: "Curso de Optimización de sistemas",
         hrefWeb: "https://leonsonidovirtualpro.com/cursos/optimizaciondesistemas.html",
         icon: "🔊",
+      },
+      {
+        label: "Curso oficial de Dante (Audinate)",
+        hrefWeb: "https://leonsonidovirtualpro.com/certificaciondante.html",
+        icon: "",
+        iconSrc: dante,
       }
     ],
   },
@@ -203,7 +199,7 @@ const sections = [
       },
       {
         label: "Entrenador oficial Dante (Audinate)",
-        hrefWeb: "https://www.getdante.com/meet-dante/partners/dante-certified-training-partners/",
+        hrefWeb: "https://leonsonidovirtualpro.com/certificaciondante.html",
         icon: "🎓",
         iconSrc: dante,
       },
