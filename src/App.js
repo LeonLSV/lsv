@@ -19,7 +19,7 @@ import cuelist from "./cuelist.png";
 import setlist from "./setlist.png";
 import rta from "./rta.png";
 import testlr from "./testlr.png";
-import stage from "./stage.png";
+import stage from "./simpsons1.png";
 import podcastleonsonidovirtual from "./podcastleonsonidovirtual.png";
 // import ReactPlayer from "react-player";
 import { useState } from "react";
