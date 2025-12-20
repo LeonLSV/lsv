@@ -29,15 +29,41 @@ import foto from "./fotoleon.png";
 
 // --- DATA: centralizamos todo acá para no repetir markup ---
 const storeLinks = {
-  apple: "https://apps.apple.com/co/app/lsvtools/id1581526543?l=en",
+  apple: "https://apps.apple.com/co/app/lsv-tools-3/id6744276712",
   google:
     "https://play.google.com/store/apps/details?id=com.leonsonidovirtual.lsvtools&hl=es_CO&gl=US",
 };
 
 const sections = [
   {
+    title: "Cursos",
+    items: [
+      {
+        label: "Curso de RF",
+        hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
+        icon: "📡",
+      },
+      {
+        label: "Curso de Optimización de sistemas",
+        hrefWeb: "https://leonsonidovirtualpro.com/cursos/optimizaciondesistemas.html",
+        icon: "🔊",
+      },
+      {
+        label: "Curso oficial de Dante (Audinate)",
+        hrefWeb: "https://leonsonidovirtualpro.com/certificaciondante.html",
+        icon: "",
+        iconSrc: dante,
+      }
+    ],
+  },
+  {
     title: "Apps & Herramientas",
     items: [
+      {
+        label: "Sub Array - Arreglos de subs",
+        hrefWeb: "https://leonsonidovirtualpro.com/software/prediccionlsv.html",
+        icon: "🔈",
+      },
       {
         label: "LSV StagePlot",
         hrefWeb: "https://leonsonidovirtualpro.com/lsvstageplot.html",
@@ -99,27 +125,6 @@ const sections = [
         hrefWeb: "https://ridertecnico-lsv.com/feedbacks",
         icon: "🏋️",
       },
-    ],
-  },
-  {
-    title: "Cursos",
-    items: [
-      {
-        label: "Curso de RF",
-        hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursoderadiofrecuencia.html",
-        icon: "📡",
-      },
-      {
-        label: "Curso de Optimización de sistemas",
-        hrefWeb: "https://leonsonidovirtualpro.com/cursos/optimizaciondesistemas.html",
-        icon: "🔊",
-      },
-      {
-        label: "Curso oficial de Dante (Audinate)",
-        hrefWeb: "https://leonsonidovirtualpro.com/certificaciondante.html",
-        icon: "",
-        iconSrc: dante,
-      }
     ],
   },
   {
