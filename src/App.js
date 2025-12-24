@@ -61,7 +61,7 @@ const sections = [
     items: [
       {
         label: "SubMate 🧉 - Simulador 2D",
-        hrefWeb: "https://leonsonidovirtualpro.com/software/prediccionlsv.html",
+        hrefWeb: "https://leonsonidovirtualpro.com/software/submate.html",
         icon: "🔈",
       },
       {
