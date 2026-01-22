@@ -49,11 +49,26 @@ const sections = [
         icon: "🔊",
       },
       {
-        label: "Curso oficial de Dante (Audinate)",
+        label: "Curso de Dante (Audinate)",
         hrefWeb: "https://leonsonidovirtualpro.com/certificaciondante.html",
         icon: "",
         iconSrc: dante,
-      }
+      },
+      {
+        label: "Cursos presenciales en tu ciudad",
+        hrefWeb: "https://leonsonidovirtualpro.com/capacitacionespresenciales.html",
+        icon: "🏙️",
+      },
+    ],
+  },
+  {
+    title: "Colaboraciones",
+    items: [
+      {
+        label: "Trabajemos juntos",
+        hrefWeb: "https://leonsonidovirtualpro.com/colaboraciones.html",
+        icon: "👨‍💻",
+      },
     ],
   },
   {
