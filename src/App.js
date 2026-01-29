@@ -51,12 +51,17 @@ const sections = [
       {
         label: "Curso de Yamaha CL5",
         hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursodeyamahacl5.html",
-        icon: "🎮",
+        icon: "🎛️",
       },
       {
         label: "Curso de Playback para show en vivo",
         hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursodeplayback.html",
         icon: "💿",
+      },
+      {
+        label: "Curso de Mezcla en vivo",
+        hrefWeb: "https://leonsonidovirtualpro.com/cursos/cursodeoperadordeaudio.html",
+        icon: "🎚️",
       },
       {
         label: "Curso de Dante (Audinate)",
