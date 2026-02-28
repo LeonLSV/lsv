@@ -7,7 +7,7 @@ describe("App", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: /todas mis redes, apps y cursos/i,
+        name: /cursos de audio en vivo/i,
       })
     ).toBeInTheDocument();
   });
@@ -16,11 +16,11 @@ describe("App", () => {
     render(<App />);
 
     expect(
-      screen.getByRole("button", { name: /curso de rf/i })
+      screen.getByRole("link", { name: /curso de rf/i })
     ).toBeInTheDocument();
 
     expect(
-      screen.getByRole("link", { name: /usar lsv stageplot/i })
+      screen.getByRole("link", { name: /lsv stageplot/i })
     ).toHaveAttribute("href", "https://leonsonidovirtualpro.com/lsvstageplot.html");
   });
 });
