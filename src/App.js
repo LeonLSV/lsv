@@ -25,7 +25,7 @@ import podcastleonsonidovirtual from "./podcastleonsonidovirtual.png";
 import { useState } from "react";
 
 
-import foto from "./fotoleon.png";
+import foto from "./fotoleon-optimized.jpg";
 
 // --- DATA: centralizamos todo acá para no repetir markup ---
 const storeLinks = {
@@ -161,7 +161,7 @@ const sections = [
     title: "Música para optimizar sistemas",
     items: [
       {
-        label: "Recomendaciones musiscales",
+        label: "Recomendaciones musicales",
         hrefWeb: "https://leonsonidovirtualpro.com/musica.html",
         icon: "🎵",
       }
@@ -327,6 +327,8 @@ const bioTimeline = [
   },
 ];
 
+const seoIntro = `Formacion especializada en cursos de audio en vivo para sonidistas, operadores, ingenieros de monitores y tecnicos de RF. Aprende radiofrecuencia, mezcla en vivo, optimizacion de sistemas, Yamaha CL5, Dante (Audinate), stage plots y herramientas practicas para shows en vivo.`;
+
 
 // --- Helpers ---
 function openDeeplinkOrWeb(hrefWeb, deeplink) {
@@ -399,7 +401,7 @@ function StoreBadges() {
 
 function Bio() {
   const [expanded, setExpanded] = useState(false);
-  const items = expanded ? bioTimeline : bioTimeline.slice(0, 3); // muestra los 6 primeros y luego “ver más”
+  const items = expanded ? bioTimeline : bioTimeline.slice(0, 3);
 
   return (
     <>
@@ -435,6 +437,7 @@ export default function App() {
           Todas mis redes, <span className="nowrap">apps</span> y{" "}
           <span className="nowrap">cursos</span>
         </h1>
+        <p className="hero__seo">{seoIntro}</p>
 
         {/* CTAs con miniatura fuera del botón */}
 <div className="hero__cta hero__cta--withthumbs">
@@ -446,7 +449,7 @@ export default function App() {
       rel="noopener noreferrer"
       aria-label="Abrir LSV StagePlot"
     >
-      <img src={stage} alt="" loading="lazy" decoding="async" />
+      <img src={stage} alt="Vista previa de LSV StagePlot" loading="lazy" decoding="async" />
     </a>
     <a
       className="btn btn--primary btn--small"
@@ -466,7 +469,7 @@ export default function App() {
       rel="noopener noreferrer"
       aria-label="Abrir LSV Tools"
     >
-      <img src={lsvtools} alt="" loading="lazy" decoding="async" />
+      <img src={lsvtools} alt="Vista previa de la app LSV Tools" loading="lazy" decoding="async" />
     </a>
     <a
       className="btn btn--small"
@@ -486,7 +489,7 @@ export default function App() {
       rel="noopener noreferrer"
       aria-label="Abrir Escuela Online"
     >
-      <img src={school} alt="" loading="lazy" decoding="async" />
+      <img src={school} alt="Vista previa de Escuela Online de audio en vivo" loading="lazy" decoding="async" />
     </a>
     <a
       className="btn btn--small"
@@ -502,7 +505,7 @@ export default function App() {
 
       </header>
 
-      <main className="nav" role="navigation" aria-label="Secciones de enlaces">
+      <main className="nav" aria-label="Contenido principal">
         {/* Bloque destacado: badges de tiendas */}
         <section className="section">
           <h2 className="section__title">LSV Tools en tu celular</h2>
@@ -519,6 +522,13 @@ export default function App() {
             </div>
           </section>
         ))}
+
+        <section className="section section--seo">
+          <h2 className="section__title">Cursos de audio en vivo</h2>
+          <p className="section__copy">
+            Encontraras cursos de audio en vivo para diferentes niveles: RF, optimizacion de sistemas, mezcla en vivo, Yamaha CL5, playback y certificacion Dante.
+          </p>
+        </section>
 
         {/* Sobre mí (compacto) */}
         <section className="section about">
