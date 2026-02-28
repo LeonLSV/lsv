@@ -15,7 +15,8 @@ import rta from "./rta.png";
 import setlist from "./setlist.png";
 import cuelist from "./cuelist.png";
 import podcast from "./podcastleonsonidovirtual.png";
-import portrait from "./fotoleon-optimized.jpg";
+import heroPortrait from "./fotoleon-3-optimized.jpg";
+import bioPortrait from "./fotoleon-nueva-optimized.jpg";
 import { useState } from "react";
 
 const courses = [
@@ -275,7 +276,7 @@ function BioSection() {
       <div className="bio">
         <img
           className="bio__photo"
-          src={portrait}
+          src={bioPortrait}
           alt="Leon Sonido Virtual"
           loading="lazy"
           decoding="async"
@@ -311,7 +312,7 @@ export default function App() {
         <section className="hero-panel" aria-label="Presentacion principal">
           <img
             className="hero-panel__portrait"
-            src={portrait}
+            src={heroPortrait}
             alt="Leon Sonido Virtual"
             loading="lazy"
             decoding="async"
@@ -321,8 +322,10 @@ export default function App() {
             <img className="hero-panel__logo" src={logo} alt="Leon Sonido Virtual" />
             <h1>Cursos de Audio en Vivo</h1>
             <p>
-              RF, mezcla en vivo, optimizacion de sistemas, Yamaha CL5, Dante y
-              herramientas para sonidistas.
+              Lleva tu carrera al siguiente nivel con mi escuela de formacion
+              profesional en audio en vivo: cursos paso a paso, entrenamiento
+              real para shows y apps que te ayudan a optimizar
+              sistemas y trabajar mas rapido como sonidista en general.
             </p>
             <ul className="topic-list" aria-label="Temas principales">
               {focusTopics.map((topic) => (
