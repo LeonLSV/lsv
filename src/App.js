@@ -328,6 +328,7 @@ const bioTimeline = [
 ];
 
 const seoIntro = `Formacion especializada en cursos de audio en vivo para sonidistas, operadores, ingenieros de monitores y tecnicos de RF. Aprende radiofrecuencia, mezcla en vivo, optimizacion de sistemas, Yamaha CL5, Dante (Audinate), stage plots y herramientas practicas para shows en vivo.`;
+const focusAreas = ["RF", "Mezcla en vivo", "Sistemas", "Yamaha CL5", "Dante"];
 
 
 // --- Helpers ---
@@ -432,12 +433,21 @@ export default function App() {
       <img className="bg" src={fondo} alt="" aria-hidden />
 
       <header className="hero">
+        <div className="hero__welcome">
+          <p className="hero__eyebrow">Leon Sonido Virtual</p>
+          <span className="hero__badge">Cursos de audio en vivo</span>
+        </div>
         <img className="hero__logo" src={logo} alt="Leonsonidovirtual" />
         <h1 className="hero__title">
           Todas mis redes, <span className="nowrap">apps</span> y{" "}
           <span className="nowrap">cursos</span>
         </h1>
         <p className="hero__seo">{seoIntro}</p>
+        <ul className="hero__chips" aria-label="Temas principales">
+          {focusAreas.map((topic) => (
+            <li key={topic}>{topic}</li>
+          ))}
+        </ul>
 
         {/* CTAs con miniatura fuera del botón */}
 <div className="hero__cta hero__cta--withthumbs">
