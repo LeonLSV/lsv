@@ -41,7 +41,7 @@ body {
   min-height: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px 10px calc(102px + env(safe-area-inset-bottom));
+  padding: 10px 10px calc(132px + env(safe-area-inset-bottom));
 }
 
 .app-shell {
@@ -417,34 +417,64 @@ body {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: max(8px, env(safe-area-inset-bottom));
-  width: min(420px, calc(100% - 12px));
-  border-radius: 16px;
-  border: 1px solid var(--line-soft);
-  background: rgba(8, 18, 36, 0.88);
-  backdrop-filter: blur(14px);
-  box-shadow: var(--shadow-lg);
+  bottom: max(10px, env(safe-area-inset-bottom));
+  width: min(420px, calc(100% - 14px));
+  border-radius: 18px;
+  border: 1px solid rgba(181, 209, 255, 0.3);
+  background: linear-gradient(160deg, rgba(9, 20, 40, 0.95), rgba(18, 36, 68, 0.93));
+  backdrop-filter: blur(16px) saturate(1.15);
+  box-shadow:
+    0 18px 30px rgba(4, 10, 24, 0.58),
+    0 0 22px rgba(79, 141, 255, 0.36);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 6px;
-  padding: 6px;
-  z-index: 20;
+  padding: 8px;
+  z-index: 60;
 }
 
-.bottom-dock a {
-  min-height: 44px;
-  border-radius: 11px;
-  border: 1px solid transparent;
-  background: rgba(141, 184, 253, 0.12);
+.dock-link {
+  min-height: 52px;
+  border-radius: 12px;
+  border: 1px solid rgba(181, 209, 255, 0.24);
+  background: linear-gradient(180deg, rgba(146, 186, 255, 0.17), rgba(146, 186, 255, 0.08));
   color: var(--text);
   text-decoration: none;
-  display: grid;
-  place-items: center;
-  font-size: 12px;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
   text-align: center;
-  line-height: 1.1;
-  padding: 6px;
+  padding: 6px 4px;
+  transition: transform 0.16s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.dock-link__icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.dock-link__label {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.dock-link--primary {
+  border-color: rgba(186, 217, 255, 0.45);
+  background: linear-gradient(180deg, rgba(93, 154, 255, 0.52), rgba(75, 141, 255, 0.36));
+  box-shadow: 0 8px 16px rgba(52, 111, 215, 0.38);
+}
+
+.dock-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(186, 217, 255, 0.44);
+  box-shadow: 0 8px 16px rgba(4, 12, 24, 0.42);
+}
+
+.dock-link:active {
+  transform: translateY(0);
 }
 
 .footer {
@@ -485,7 +515,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .pill,
-  .bottom-dock a {
+  .dock-link {
     transition: none;
   }
 }

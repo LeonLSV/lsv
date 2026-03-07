@@ -17,6 +17,7 @@ import cuelist from "./cuelist.png";
 import podcast from "./podcastleonsonidovirtual.png";
 import heroPortrait from "./fotoleon-3-optimized.jpg";
 import bioPortrait from "./fotoleon-nueva-optimized.jpg";
+import bioPortrait2 from "./fotoleon-optimized.jpg";
 import { useState } from "react";
 
 const courses = [
@@ -71,6 +72,11 @@ const appHighlights = [
 ];
 
 const appTools = [
+  {
+    label: "SubMate - Simulador 2D",
+    href: "https://leonsonidovirtualpro.com/software/submate.html",
+    icon: "🔈",
+  },
   {
     label: "APP Test L y R",
     href: "https://apps.apple.com/co/app/lsv-generador/id6737373130",
@@ -134,6 +140,29 @@ const community = [
     label: "Agenda Diario de Gira",
     href: "https://leonsonidovirtualpro.com/diariodegira.html",
     icon: "📓",
+  },
+  {
+    label: "Entrenador oficial Dante (Audinate)",
+    href: "https://leonsonidovirtualpro.com/certificaciondante.html",
+    icon: "🎚️",
+  },
+  {
+    label: "Amigo Shure",
+    href: "https://p.shure.com/amigos-shure",
+    icon: "🎤",
+  },
+];
+
+const resources = [
+  {
+    label: "Recomendaciones musicales",
+    href: "https://leonsonidovirtualpro.com/musica.html",
+    icon: "🎵",
+  },
+  {
+    label: "Recomendaciones de herramientas",
+    href: "https://leonsonidovirtualpro.com/herramientas.html",
+    icon: "🧰",
   },
 ];
 
@@ -276,7 +305,7 @@ function BioSection() {
       <div className="bio">
         <img
           className="bio__photo"
-          src={bioPortrait}
+          src={bioPortrait2}
           alt="Leon Sonido Virtual"
           loading="lazy"
           decoding="async"
@@ -380,6 +409,14 @@ export default function App() {
             </div>
           </SectionCard>
 
+          <SectionCard title="Recursos recomendados">
+            <div className="pill-grid">
+              {resources.map((item) => (
+                <LinkPill key={item.label} {...item} />
+              ))}
+            </div>
+          </SectionCard>
+
           <SectionCard title="Redes">
             <div className="social-grid">
               {socials.map((social) => (
@@ -423,34 +460,45 @@ export default function App() {
           <BioSection />
         </main>
 
-        <nav className="bottom-dock" aria-label="Accesos rapidos">
-          <a
-            href="https://leonsonidovirtualpro.com/lsvstageplot.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            StagePlot
-          </a>
-          <a
-            href="https://leonsonidovirtualpro.com/lsvtools/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LSV Tools
-          </a>
-          <a
-            href="https://www.patreon.com/c/leonsonidovirtual/about"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mi Escuela
-          </a>
-        </nav>
-
         <footer className="footer">
           <small>Leon Sonido Virtual · Cursos de audio en vivo</small>
         </footer>
       </div>
+      <nav className="bottom-dock" aria-label="Accesos rapidos">
+        <a
+          className="dock-link"
+          href="https://leonsonidovirtualpro.com/lsvstageplot.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="dock-link__icon" aria-hidden>
+            🎛️
+          </span>
+          <span className="dock-link__label">StagePlot</span>
+        </a>
+        <a
+          className="dock-link dock-link--primary"
+          href="https://leonsonidovirtualpro.com/lsvtools/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="dock-link__icon" aria-hidden>
+            🧰
+          </span>
+          <span className="dock-link__label">LSV Tools</span>
+        </a>
+        <a
+          className="dock-link"
+          href="https://www.patreon.com/c/leonsonidovirtual/about"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="dock-link__icon" aria-hidden>
+            🎓
+          </span>
+          <span className="dock-link__label">Mi Escuela</span>
+        </a>
+      </nav>
     </div>
   );
 }
