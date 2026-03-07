@@ -16,8 +16,7 @@ import setlist from "./setlist.png";
 import cuelist from "./cuelist.png";
 import podcast from "./podcastleonsonidovirtual.png";
 import heroPortrait from "./fotoleon-3-optimized.jpg";
-import bioPortrait from "./fotoleon-nueva-optimized.jpg";
-import bioPortrait2 from "./fotoleon-optimized.jpg";
+import bioPortrait3 from "./fotoleon-optimized.jpg";
 import { useState } from "react";
 
 const courses = [
@@ -305,7 +304,7 @@ function BioSection() {
       <div className="bio">
         <img
           className="bio__photo"
-          src={bioPortrait2}
+          src={bioPortrait3}
           alt="Leon Sonido Virtual"
           loading="lazy"
           decoding="async"
