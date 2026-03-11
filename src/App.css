@@ -377,6 +377,35 @@ body {
   color: var(--muted);
 }
 
+.bio__interview {
+  display: grid;
+  gap: 10px;
+}
+
+.bio__qa {
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: rgba(157, 189, 247, 0.08);
+  padding: 10px;
+}
+
+.bio__qa h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.bio__qa p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.bio__qa p + p {
+  margin-top: 6px;
+}
+
 .bio__timeline {
   margin: 0;
   padding: 0;

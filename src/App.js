@@ -206,6 +206,31 @@ const stores = {
 
 const focusTopics = ["RF", "Mezcla", "Sistemas", "Yamaha CL5", "Dante"];
 
+const miniInterview = [
+  {
+    question: "Quien es Leon y que palabras lo definirian?",
+    answers: [
+      "Leon es la persona detras de la marca Leonsonidovirtual.",
+      "Algunas de las palabras que me definirian son: inquieto, tranquilo, dedicado, emprendedor, intenso, apasionado y alguien a quien le gusta aprender constantemente de todo.",
+    ],
+  },
+  {
+    question: "Que es Leonsonidovirtual y como lo definirias?",
+    answers: [
+      "Leonsonidovirtual es un proyecto creado por Leon.",
+      "Lo definiria como una plataforma 360 orientada a sonidistas y a todas las personas que se involucran o quieren involucrarse en el mundo de los eventos en vivo.",
+    ],
+  },
+  {
+    question: "Tenias claro lo que querias cuando empezaste?",
+    answers: [
+      "Si... o bueno, no tan al inicio.",
+      "Todo empezo como una escapada de algunos problemas personales, alrededor de 2012. Quiza por 2013 o 2014 ya tenia mucho mas claro el panorama completo de lo que queria hacer con Leonsonidovirtual, aunque el nombre aparecio recien por 2015, cuando abri mi primera web y empece a dar cursos online.",
+      "Desde ese momento hasta hoy, el panorama siempre ha estado claro. Todavia no estoy en el punto al que quiero llegar, pero ya cumpli uno de los objetivos iniciales: poder capacitar a otras personas y vivir de esto desde cualquier parte del mundo.",
+    ],
+  },
+];
+
 const bioIntro = `Actualmente estoy en Colombia. Trabajo como Ingeniero de Monitores y Tecnico de RF de Manuel Turizo desde 2019. Tambien colaboro con otros artistas y desarrollo aplicaciones para audio en vivo como LSV Tools y LSV StagePlot, ademas del juego de Feedbacks. Dicto cursos en mi plataforma online y soy entrenador oficial de Dante de Audinate.`;
 
 const bioTimeline = [
@@ -309,6 +334,16 @@ function BioSection() {
           loading="lazy"
           decoding="async"
         />
+        <div className="bio__interview">
+          {miniInterview.map((item) => (
+            <article key={item.question} className="bio__qa">
+              <h3>{item.question}</h3>
+              {item.answers.map((answer) => (
+                <p key={answer}>{answer}</p>
+              ))}
+            </article>
+          ))}
+        </div>
         <p className="bio__intro">{bioIntro}</p>
         <ul className="bio__timeline">
           {visibleItems.map((item) => (
