@@ -26,7 +26,7 @@ const courses = [
     icon: "📡",
   },
   {
-    label: "Curso de Optimizacion de sistemas",
+    label: "Curso de Optimización de sistemas",
     href: "https://leonsonidovirtualpro.com/cursos/optimizaciondesistemas.html",
     icon: "🔊",
   },
@@ -77,19 +77,19 @@ const appTools = [
     icon: "🔈",
   },
   {
+    label: "LSV SetList",
+    href: "https://www.leonsonidovirtual.org/lsvsetlist/",
+    image: setlist,
+  },
+  {
     label: "APP Test L y R",
     href: "https://apps.apple.com/co/app/lsv-generador/id6737373130",
     image: testlr,
   },
-  {
+    {
     label: "APP LSV RTA",
     href: "https://apps.apple.com/co/app/lsv-rta/id6743376725",
     image: rta,
-  },
-  {
-    label: "APP LSV SetList",
-    href: "https://apps.apple.com/co/app/lsv-setlist/id6743781110",
-    image: setlist,
   },
   {
     label: "APP LSV CueList",
@@ -165,6 +165,24 @@ const resources = [
   },
 ];
 
+const communityChannels = [
+  {
+    label: "Discord",
+    href: "https://discord.gg/8hySTNBrT",
+    icon: "💬",
+  },
+  {
+    label: "Canal de Instagram",
+    href: "https://www.instagram.com/channel/AbbCeqgXwew3uabE/",
+    icon: "📸",
+  },
+  {
+    label: "Canal de WhatsApp",
+    href: "https://whatsapp.com/channel/0029Va9RkUBG3R3oxCRSuF0r",
+    icon: "🟢",
+  },
+];
+
 const socials = [
   {
     label: "Web",
@@ -208,30 +226,30 @@ const focusTopics = ["RF", "Mezcla", "Sistemas", "Yamaha CL5", "Dante"];
 
 const miniInterview = [
   {
-    question: "Quien es Leon y que palabras lo definirian?",
+    question: "¿Quién es León y qué palabras lo definirían?",
     answers: [
-      "Leon es la persona detras de la marca Leonsonidovirtual.",
-      "Algunas de las palabras que me definirian son: inquieto, tranquilo, dedicado, emprendedor, intenso, apasionado y alguien a quien le gusta aprender constantemente de todo.",
+      "León es la persona detrás de la marca Leonsonidovirtual.",
+      "Algunas de las palabras que me definirían son: inquieto, tranquilo, dedicado, emprendedor, intenso, apasionado y alguien a quien le gusta aprender constantemente de todo.",
     ],
   },
   {
-    question: "Que es Leonsonidovirtual y como lo definirias?",
+    question: "¿Qué es Leonsonidovirtual y cómo lo definirías?",
     answers: [
-      "Leonsonidovirtual es un proyecto creado por Leon.",
-      "Lo definiria como una plataforma 360 orientada a sonidistas y a todas las personas que se involucran o quieren involucrarse en el mundo de los eventos en vivo.",
+      "Leonsonidovirtual es un proyecto creado por León.",
+      "Lo definiría como una plataforma 360° orientada a sonidistas y a todas las personas que se involucran o quieren involucrarse en el mundo de los eventos en vivo.",
     ],
   },
   {
-    question: "Tenias claro lo que querias cuando empezaste?",
+    question: "¿Tenías claro lo que querías cuando empezaste?",
     answers: [
-      "Si... o bueno, no tan al inicio.",
-      "Todo empezo como una escapada de algunos problemas personales, alrededor de 2012. Quiza por 2013 o 2014 ya tenia mucho mas claro el panorama completo de lo que queria hacer con Leonsonidovirtual, aunque el nombre aparecio recien por 2015, cuando abri mi primera web y empece a dar cursos online.",
-      "Desde ese momento hasta hoy, el panorama siempre ha estado claro. Todavia no estoy en el punto al que quiero llegar, pero ya cumpli uno de los objetivos iniciales: poder capacitar a otras personas y vivir de esto desde cualquier parte del mundo.",
+      "Sí... o bueno, no tan al inicio.",
+      "Todo empezó como una escapada de algunos problemas personales, alrededor de 2012. Quizá por 2013 o 2014 ya tenía mucho más claro el panorama completo de lo que quería hacer con Leonsonidovirtual, aunque el nombre apareció recién por 2015, cuando abrí mi primera web y empecé a dar cursos online.",
+      "Desde ese momento hasta hoy, el panorama siempre ha estado claro. Todavía no estoy en el punto al que quiero llegar, pero ya cumplí uno de los objetivos iniciales: poder capacitar a otras personas y vivir de esto desde cualquier parte del mundo.",
     ],
   },
 ];
 
-const bioIntro = `Actualmente estoy en Colombia. Trabajo como Ingeniero de Monitores y Tecnico de RF de Manuel Turizo desde 2019. Tambien colaboro con otros artistas y desarrollo aplicaciones para audio en vivo como LSV Tools y LSV StagePlot, ademas del juego de Feedbacks. Dicto cursos en mi plataforma online y soy entrenador oficial de Dante de Audinate.`;
+const bioIntro = `Actualmente estoy en Colombia. Trabajo como Ingeniero de Monitores y Técnico de RF de Manuel Turizo desde 2019. También colaboro con otros artistas y desarrollo aplicaciones para audio en vivo como LSV Tools y LSV StagePlot, además del juego de Feedbacks. Dicto cursos en mi plataforma online y soy entrenador oficial de Dante de Audinate.`;
 
 const bioTimeline = [
   {
@@ -240,7 +258,7 @@ const bioTimeline = [
   },
   {
     year: "2012",
-    text: "Creo el canal de YouTube Leon Tutoriales y empiezo a trabajar en una serie de TV como capturador de audio.",
+    text: "Creo el canal de YouTube León Tutoriales y empiezo a trabajar en una serie de TV como capturador de audio.",
   },
   {
     year: "2014",
@@ -248,7 +266,7 @@ const bioTimeline = [
   },
   {
     year: "2015",
-    text: "Comienzo a dar capacitaciones presenciales y creo la web Leon Sonido Virtual.",
+    text: "Comienzo a dar capacitaciones presenciales y creo la web León Sonido Virtual.",
   },
   {
     year: "2016",
@@ -256,7 +274,7 @@ const bioTimeline = [
   },
   {
     year: "2017",
-    text: "Doy una capacitacion en Bolivia y luego me mudo a Guatemala.",
+    text: "Doy una capacitación en Bolivia y luego me mudo a Guatemala.",
   },
   {
     year: "2018",
@@ -264,7 +282,7 @@ const bioTimeline = [
   },
   {
     year: "2019",
-    text: "Comienzo a trabajar como Ingeniero de Monitores y Tecnico de RF de Manuel Turizo.",
+    text: "Comienzo a trabajar como Ingeniero de Monitores y Técnico de RF de Manuel Turizo.",
   },
   {
     year: "2020",
@@ -272,7 +290,7 @@ const bioTimeline = [
   },
   {
     year: "2021",
-    text: "Desarrollo mis apps LSV Tools para celulares y tabletas y Rider Tecnico LSV.",
+    text: "Desarrollo mis apps LSV Tools para celulares y tabletas y Rider Técnico LSV.",
   },
   {
     year: "2022",
@@ -330,7 +348,7 @@ function BioSection() {
         <img
           className="bio__photo"
           src={bioPortrait3}
-          alt="Leon Sonido Virtual"
+          alt="León Sonido Virtual"
           loading="lazy"
           decoding="async"
         />
@@ -354,7 +372,7 @@ function BioSection() {
           ))}
         </ul>
         <button className="bio__toggle" onClick={() => setExpanded((v) => !v)}>
-          {expanded ? "Ver menos" : "Ver mas"}
+          {expanded ? "Ver menos" : "Ver más"}
         </button>
       </div>
     </SectionCard>
@@ -367,28 +385,28 @@ export default function App() {
       <div className="app-shell">
         <header className="topbar" aria-label="Encabezado">
           <div className="topbar__welcome">
-            <p className="topbar__hello">Hola, soy Leon</p>
+            <p className="topbar__hello">Hola, soy León</p>
             <p className="topbar__sub">Bienvenido a mis cursos y herramientas</p>
           </div>
         </header>
 
-        <section className="hero-panel" aria-label="Presentacion principal">
+        <section className="hero-panel" aria-label="Presentación principal">
           <img
             className="hero-panel__portrait"
             src={heroPortrait}
-            alt="Leon Sonido Virtual"
+            alt="León Sonido Virtual"
             loading="lazy"
             decoding="async"
           />
           <div className="hero-panel__overlay" aria-hidden />
           <div className="hero-panel__content">
-            <img className="hero-panel__logo" src={logo} alt="Leon Sonido Virtual" />
+            <img className="hero-panel__logo" src={logo} alt="León Sonido Virtual" />
             <h1>Cursos de Audio en Vivo</h1>
             <p>
-              Lleva tu carrera al siguiente nivel con mi escuela de formacion
+              Lleva tu carrera al siguiente nivel con mi escuela de formación
               profesional en audio en vivo: cursos paso a paso, entrenamiento
               real para shows y apps que te ayudan a optimizar
-              sistemas y trabajar mas rapido como sonidista en general.
+              sistemas y trabajar más rápido como sonidista en general.
             </p>
             <ul className="topic-list" aria-label="Temas principales">
               {focusTopics.map((topic) => (
@@ -401,7 +419,7 @@ export default function App() {
         <main className="content" aria-label="Contenido principal">
           <SectionCard
             title="Cursos principales"
-            subtitle="Formacion practica para audio en vivo"
+            subtitle="Formación práctica para audio en vivo"
           >
             <div className="pill-grid">
               {courses.map((course) => (
@@ -412,7 +430,7 @@ export default function App() {
 
           <SectionCard
             title="Apps y herramientas"
-            subtitle="StagePlot, LSV Tools y utilidades rapidas"
+            subtitle="StagePlot, LSV Tools y utilidades rápidas"
           >
             <div className="highlight-grid">
               {appHighlights.map((item) => (
@@ -446,6 +464,14 @@ export default function App() {
           <SectionCard title="Recursos recomendados">
             <div className="pill-grid">
               {resources.map((item) => (
+                <LinkPill key={item.label} {...item} />
+              ))}
+            </div>
+          </SectionCard>
+
+          <SectionCard title="Comunidad" subtitle="Súmate a los canales de León Sonido Virtual">
+            <div className="pill-grid">
+              {communityChannels.map((item) => (
                 <LinkPill key={item.label} {...item} />
               ))}
             </div>
@@ -495,10 +521,10 @@ export default function App() {
         </main>
 
         <footer className="footer">
-          <small>Leon Sonido Virtual · Cursos de audio en vivo</small>
+          <small>León Sonido Virtual · Cursos de audio en vivo</small>
         </footer>
       </div>
-      <nav className="bottom-dock" aria-label="Accesos rapidos">
+      <nav className="bottom-dock" aria-label="Accesos rápidos">
         <a
           className="dock-link"
           href="https://leonsonidovirtualpro.com/lsvstageplot.html"

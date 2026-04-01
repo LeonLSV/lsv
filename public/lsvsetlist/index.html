@@ -1,0 +1,1518 @@
+<!doctype html>
+<html lang="es-CO">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0c0c" />
+  <meta name="application-name" content="LSV SetList" />
+  <meta name="apple-mobile-web-app-title" content="LSV SetList" />
+  <meta id="meta-description" name="description"
+    content="LSV SetList es la app para crear setlists, organizar shows en vivo, reutilizar repertorios y exportar PDFs profesionales desde iPhone, iPad, Android y macOS." />
+  <meta id="meta-keywords" name="keywords"
+    content="LSV SetList, app setlist, setlist para músicos, app para cantantes, setlist para shows en vivo, setlist para directores musicales, exportar setlist PDF, organizar repertorios, repertorios por artista, León Sonido Virtual" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="León Sonido Virtual" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta id="meta-og-site-name" property="og:site_name" content="León Sonido Virtual" />
+  <meta property="og:url" content="https://www.leonsonidovirtual.org/lsvsetlist/" />
+  <meta id="meta-og-title" property="og:title"
+    content="LSV SetList | App para organizar shows en vivo y exportar setlists en PDF" />
+  <meta id="meta-og-description" property="og:description"
+    content="Creá shows, reutilizá canciones, organizá repertorios por artista y exportá setlists profesionales en PDF. Disponible para iPhone, iPad, Android y macOS." />
+  <meta property="og:image" content="https://www.leonsonidovirtual.org/lsvsetlist/LSVsetlist.png" />
+  <meta property="og:image:alt" content="LSV SetList, app para organizar shows en vivo y exportar setlists profesionales" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta id="meta-twitter-title" name="twitter:title"
+    content="LSV SetList | App para organizar shows en vivo y exportar setlists en PDF" />
+  <meta id="meta-twitter-description" name="twitter:description"
+    content="La app para crear setlists, reutilizar repertorios y exportar PDFs profesionales para shows en vivo." />
+  <meta name="twitter:image" content="https://www.leonsonidovirtual.org/lsvsetlist/LSVsetlist.png" />
+  <meta name="twitter:image:alt" content="LSV SetList, app para organizar shows en vivo y exportar setlists profesionales" />
+  <meta name="twitter:site" content="@leonsonidovirtual" />
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
+  <link rel="canonical" href="https://www.leonsonidovirtual.org/lsvsetlist/" />
+  <title data-i18n-meta="title">LSV SetList | App para organizar shows en vivo y exportar setlists en PDF</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "LSV SetList",
+          "url": "https://www.leonsonidovirtual.org/lsvsetlist/",
+          "description": "LSV SetList es la app para crear setlists, organizar shows en vivo, reutilizar repertorios y exportar PDFs profesionales desde iPhone, iPad, Android y macOS.",
+          "inLanguage": "es",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "León Sonido Virtual",
+            "url": "https://www.leonsonidovirtual.org/"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "LSV SetList",
+          "applicationCategory": "MusicApplication",
+          "operatingSystem": [
+            "iOS",
+            "iPadOS",
+            "Android",
+            "macOS"
+          ],
+          "description": "Aplicación para crear setlists, organizar repertorios por artista, reutilizar canciones, compartir shows y exportar setlists profesionales en PDF para músicos, cantantes, directores musicales y equipos de producción.",
+          "url": "https://www.leonsonidovirtual.org/lsvsetlist/",
+          "image": "https://www.leonsonidovirtual.org/lsvsetlist/LSVsetlist.png",
+          "author": {
+            "@type": "Person",
+            "name": "León Sonido Virtual"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "León Sonido Virtual",
+            "url": "https://www.leonsonidovirtual.org/"
+          },
+          "downloadUrl": [
+            "https://apps.apple.com/co/app/lsv-setlist/id6743781110",
+            "https://play.google.com/store/apps/details?id=com.leonsonidovirtual.lsvsetlistpaid"
+          ],
+          "featureList": [
+            "Crear shows y setlists profesionales",
+            "Reutilizar canciones y repertorios por artista",
+            "Duplicar canciones y shows completos",
+            "Exportar e importar shows entre dispositivos",
+            "Exportar setlists en PDF con portada, fecha, comentarios, tono y duración",
+            "Disponible en iPhone, iPad, Android y macOS"
+          ]
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --bg-0: #08101f;
+      --bg-1: #101f39;
+      --bg-2: #163255;
+      --text: #f5f8ff;
+      --muted: #bfd1ef;
+      --soft: #93acd0;
+      --accent: #78aeff;
+      --accent-2: #4f8eff;
+      --ok: #7fe2a4;
+      --warn: #ffd67a;
+      --panel: rgba(20, 38, 68, 0.76);
+      --panel-soft: rgba(154, 191, 255, 0.1);
+      --line: rgba(188, 214, 255, 0.18);
+      --shadow-xl: 0 28px 60px rgba(4, 12, 24, 0.52);
+      --shadow-lg: 0 16px 32px rgba(4, 12, 24, 0.38);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: "SF Pro Display", "Inter", "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(960px 560px at -8% -6%, rgba(123, 177, 255, 0.18), transparent 58%),
+        radial-gradient(880px 520px at 108% 4%, rgba(77, 132, 224, 0.22), transparent 58%),
+        linear-gradient(165deg, var(--bg-0) 0%, var(--bg-1) 52%, var(--bg-2) 100%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: 100%;
+      min-height: 100%;
+      padding: 18px 12px 40px;
+    }
+
+    .shell {
+      width: min(100%, 1180px);
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(120% 140% at 100% 18%, rgba(96, 149, 245, 0.22), transparent 40%),
+        linear-gradient(160deg, rgba(15, 31, 58, 0.97), rgba(18, 36, 69, 0.92));
+      box-shadow: var(--shadow-xl);
+      padding: 24px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.06fr 0.94fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .brand-copy {
+      display: grid;
+      gap: 2px;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 138px;
+      min-height: 40px;
+      margin-top: 6px;
+      margin-left: 10px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(151, 198, 255, 0.42);
+      background: linear-gradient(180deg, rgba(111, 170, 255, 0.92), rgba(63, 126, 233, 0.9));
+      color: #f8fbff;
+      box-shadow: 0 14px 28px rgba(34, 88, 173, 0.32);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .lang-toggle:hover {
+      transform: translateY(-1px);
+      border-color: rgba(205, 227, 255, 0.72);
+      background: linear-gradient(180deg, rgba(129, 184, 255, 0.96), rgba(76, 140, 245, 0.94));
+    }
+
+    .brand img {
+      width: 58px;
+      height: auto;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .brand span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--panel-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 0;
+      font-size: clamp(40px, 6vw, 76px);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      max-width: 10ch;
+      text-wrap: balance;
+    }
+
+    .lead {
+      margin: 16px 0 0;
+      max-width: 62ch;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .hero-points {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .hero-point {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .hero-point__mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(127, 226, 164, 0.16);
+      color: var(--ok);
+      font-weight: 800;
+    }
+
+    .hero-point span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .cta {
+      min-height: 86px;
+      min-width: 240px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      color: var(--text);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: linear-gradient(180deg, rgba(145, 186, 255, 0.16), rgba(145, 186, 255, 0.08));
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      border-color: rgba(188, 214, 255, 0.34);
+    }
+
+    .cta--primary {
+      background: linear-gradient(180deg, rgba(104, 162, 255, 0.8), rgba(75, 144, 255, 0.44));
+    }
+
+    .cta img {
+      width: auto;
+      height: 38px;
+      max-width: 170px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .cta__text {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
+    }
+
+    .cta-note {
+      margin-top: 12px;
+      color: var(--soft);
+      font-size: 13px;
+    }
+
+    .device-stack {
+      display: grid;
+      grid-template-columns: 0.96fr 0.96fr 0.72fr;
+      gap: 12px;
+      align-items: end;
+      justify-items: center;
+    }
+
+    .device {
+      width: 100%;
+      padding: 14px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(120% 120% at 100% 10%, rgba(95, 149, 246, 0.16), transparent 40%),
+        linear-gradient(165deg, rgba(17, 33, 62, 0.92), rgba(18, 37, 68, 0.86));
+      box-shadow: var(--shadow-xl);
+    }
+
+    .device--center {
+      transform: translateY(-14px);
+    }
+
+    .device__screen {
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(188, 214, 255, 0.12);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .device__screen img {
+      width: 100%;
+      display: block;
+    }
+
+    .device__label {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 0;
+    }
+
+    .grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-lg);
+      padding: 18px;
+    }
+
+    .section-title {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .section-copy {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .card p+p {
+      margin-top: 8px;
+    }
+
+    .list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .item__mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(127, 226, 164, 0.16);
+      color: var(--ok);
+      font-weight: 800;
+    }
+
+    .item strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+    .item span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .benefit-card {
+      min-height: 100%;
+    }
+
+    .feature-group {
+      display: grid;
+      gap: 10px;
+    }
+
+    .feature-group ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .feature-group li+li {
+      margin-top: 6px;
+    }
+
+    .quote {
+      min-height: 100%;
+    }
+
+    .quote p {
+      font-size: 15px;
+    }
+
+    .quote footer {
+      margin-top: 12px;
+      color: var(--soft);
+      font-size: 13px;
+    }
+
+    .showcase-card {
+      overflow: hidden;
+    }
+
+    .showcase-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(154, 191, 255, 0.08);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .showcase-copy {
+      margin-top: 10px;
+    }
+
+    .showcase-media {
+      margin-top: 14px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .showcase-media img {
+      width: 100%;
+      display: block;
+    }
+
+    .showcase-thumbs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .showcase-thumb {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .showcase-thumb img {
+      width: 100%;
+      display: block;
+    }
+
+    .compat {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .platform {
+      min-height: 36px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(154, 191, 255, 0.08);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .closing {
+      text-align: center;
+    }
+
+    .closing .section-title {
+      max-width: 12ch;
+      margin-inline: auto;
+    }
+
+    .closing .section-copy {
+      max-width: 60ch;
+      margin: 0 auto;
+    }
+
+    .footer-panel {
+      display: grid;
+      gap: 18px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .footer-block {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(154, 191, 255, 0.06);
+    }
+
+    .footer-title {
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 40px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(188, 214, 255, 0.12);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--muted);
+      text-decoration: none;
+      transition: border-color 0.18s ease, transform 0.18s ease, color 0.18s ease;
+    }
+
+    .footer-link:hover {
+      color: var(--text);
+      border-color: rgba(188, 214, 255, 0.28);
+      transform: translateY(-1px);
+    }
+
+    .footer-link__mark {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer {
+      margin-top: 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer a {
+      color: var(--text);
+    }
+
+    @media (max-width: 980px) {
+
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .compat,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .lang-toggle {
+        margin-top: 2px;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      h1,
+      .closing .section-title {
+        max-width: none;
+      }
+
+      .device-stack {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .device--center {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 12px 12px 24px;
+      }
+
+      .hero,
+      .card {
+        padding: 14px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .lead,
+      .section-copy {
+        font-size: 15px;
+      }
+
+      .cta {
+        width: 100%;
+      }
+
+      .device-stack {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cta {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="shell">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-top">
+              <div class="brand">
+                <img src="./logo.png" alt="León Sonido Virtual" />
+                <div class="brand-copy">
+                  <strong data-i18n="brand_name">León Sonido Virtual</strong>
+                  <span data-i18n="brand_platforms">App para iPhone, iPad, Android y macOS</span>
+                </div>
+              </div>
+              <button class="lang-toggle" type="button" id="lang-toggle" aria-label="Cambiar idioma">Language: EN</button>
+            </div>
+
+            <div class="badge-row">
+              <span class="badge" data-i18n="badge_live">Shows en vivo</span>
+              <span class="badge" data-i18n="badge_org">Organización profesional</span>
+              <span class="badge" data-i18n="badge_pdf">PDFs listos</span>
+            </div>
+
+            <h1 data-i18n="hero_title">Armá setlists profesionales en minutos.</h1>
+            <p class="lead" data-i18n="hero_lead">
+              LSV SetList te ayuda a crear, organizar, reutilizar y exportar
+              shows completos sin tener que empezar desde cero cada vez. Pensada
+              para músicos, cantantes, directores musicales, técnicos y equipos
+              de producción que necesitan orden, velocidad y claridad real.
+            </p>
+
+            <div class="hero-points">
+              <div class="hero-point">
+                <div class="hero-point__mark">1</div>
+                <span data-i18n="hero_point_1">Prepará shows más rápido y con menos fricción.</span>
+              </div>
+              <div class="hero-point">
+                <div class="hero-point__mark">2</div>
+                <span data-i18n="hero_point_2">Reutilizá repertorios y canciones ya configuradas.</span>
+              </div>
+              <div class="hero-point">
+                <div class="hero-point__mark">3</div>
+                <span data-i18n="hero_point_3">Exportá PDFs prolijos y compartilos al instante.</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a class="cta cta--primary" href="https://apps.apple.com/co/app/lsv-setlist/id6743781110" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./apple.png" alt="" />
+                <span class="cta__text" data-i18n="cta_apple_main">Descargar para iPhone y iPad</span>
+              </a>
+              <a class="cta" href="https://play.google.com/store/apps/details?id=com.leonsonidovirtual.lsvsetlistpaid"
+                target="_blank" rel="noopener noreferrer">
+                <img src="./google.png" alt="" />
+                <span class="cta__text" data-i18n="cta_android_main">Descargar para Android</span>
+              </a>
+            </div>
+
+            <p class="cta-note" data-i18n="cta_note">
+              Disponible en español e inglés. Misma experiencia en iPhone,
+              iPad y Android.
+            </p>
+          </div>
+
+          <div class="device-stack">
+            <div class="device">
+              <div class="device__screen">
+                <img src="./ios1.png" alt="Vista de LSV SetList en iPhone" />
+              </div>
+              <div class="device__label">iPhone</div>
+            </div>
+            <div class="device device--center">
+              <div class="device__screen">
+                <img src="./tablet2.png" alt="Vista de LSV SetList en Tablet" />
+              </div>
+              <div class="device__label">Tablet</div>
+            </div>
+            <div class="device">
+              <div class="device__screen">
+                <img src="./android1.png" alt="Vista de LSV SetList en Android" />
+              </div>
+              <div class="device__label">Android</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-2">
+        <section class="card">
+          <p class="eyebrow" data-i18n="problem_eyebrow">Problema</p>
+          <h2 class="section-title" data-i18n="problem_title">Preparar un show no debería ser una tarea repetitiva.</h2>
+          <p class="section-copy" data-i18n="problem_copy">
+            Muchos músicos, cantantes y equipos de producción siguen armando
+            setlists de forma manual: copiando canciones, repitiendo notas,
+            reescribiendo comentarios, reorganizando repertorios y exportando
+            todo a último momento. Eso consume tiempo, genera errores y vuelve
+            más desordenada la preparación del vivo.
+          </p>
+        </section>
+
+        <section class="card">
+          <p class="eyebrow" data-i18n="solution_eyebrow">Solución</p>
+          <h2 class="section-title" data-i18n="solution_title">LSV SetList convierte todo ese caos en un flujo claro.
+          </h2>
+          <p class="section-copy" data-i18n="solution_copy">
+            La app te permite crear, reutilizar, editar, duplicar, exportar e
+            imprimir setlists profesionales en minutos. No es solo una app para
+            escribir canciones: es una herramienta para agilizar la preparación
+            de shows, mantener el orden del escenario y compartir información de
+            forma prolija con todo el equipo.
+          </p>
+        </section>
+      </section>
+
+      <section class="grid grid-2">
+        <section class="card">
+          <p class="eyebrow" data-i18n="features_eyebrow">Funciones destacadas</p>
+          <h2 class="section-title" data-i18n="features_title">Lo esencial para construir un show mejor organizado.</h2>
+          <div class="feature-group">
+            <p data-i18n="features_intro">
+              LSV SetList te permite agregar a cada canción la información que realmente hace falta para trabajar con
+              claridad:
+            </p>
+            <ul>
+              <li data-i18n="features_li_1">Título</li>
+              <li data-i18n="features_li_2">Comentarios</li>
+              <li data-i18n="features_li_3">Nota o tono musical</li>
+              <li data-i18n="features_li_4">Duración</li>
+              <li data-i18n="features_li_5">Colores personalizados para título y comentarios</li>
+              <li data-i18n="features_li_6">Separaciones con texto y color para ordenar mejor el show</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card">
+          <p class="eyebrow" data-i18n="reuse_eyebrow">Reutilización inteligente</p>
+          <h2 class="section-title" data-i18n="reuse_title">No vuelvas a cargar lo mismo desde cero.</h2>
+          <div class="feature-group">
+            <p data-i18n="reuse_intro">
+              Guardá canciones reutilizables por artista, agregá temas ya existentes a nuevos shows y mantené cada
+              repertorio bajo control.
+            </p>
+            <ul>
+              <li data-i18n="reuse_li_1">Múltiples artistas con sus propias listas guardadas</li>
+              <li data-i18n="reuse_li_2">Editar y eliminar canciones guardadas</li>
+              <li data-i18n="reuse_li_3">Duplicar canciones dentro del setlist</li>
+              <li data-i18n="reuse_li_4">Duplicar shows completos</li>
+              <li data-i18n="reuse_li_5">Check visual para saber qué canciones ya están agregadas</li>
+              <li data-i18n="reuse_li_6">Detección de repetidos con confirmación antes de agregarlos otra vez</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="grid grid-2">
+        <section class="card">
+          <p class="eyebrow" data-i18n="export_eyebrow">Exportación profesional</p>
+          <h2 class="section-title" data-i18n="export_title">Pasá de la organización interna a un PDF listo para usar.
+          </h2>
+          <p class="section-copy" data-i18n="export_copy">
+            La app exporta e importa shows completos entre dispositivos, y también permite compartir listas de canciones
+            guardadas por artista. Cuando necesitás una salida profesional, podés generar PDFs listos para ensayo,
+            escenario o producción.
+          </p>
+          <div class="list">
+            <div class="item">
+              <div class="item__mark">P</div>
+              <div>
+                <strong data-i18n="export_item_1_title">PDF prolijo y completo</strong>
+                <span data-i18n="export_item_1_copy">Portada, título del show, fecha, canciones, comentarios, tono,
+                  duración por canción y duración
+                  total.</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__mark">A</div>
+              <div>
+                <strong data-i18n="export_item_2_title">Mejor uso del espacio</strong>
+                <span data-i18n="export_item_2_copy">Ajustá el tamaño de letra para adaptar el PDF al tipo de show o
+                  formato que necesites.</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__mark">S</div>
+              <div>
+                <strong data-i18n="export_item_3_title">Compartir sin fricción</strong>
+                <span data-i18n="export_item_3_copy">Ideal para mover repertorios entre dispositivos y equipos de
+                  trabajo.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <p class="eyebrow" data-i18n="live_eyebrow">Trabajo en vivo</p>
+          <h2 class="section-title" data-i18n="live_title">Hecha para el ritmo real del escenario y la preproducción.
+          </h2>
+          <p class="section-copy" data-i18n="live_copy">
+            En vivo se necesita tener todo claro, rápido y visualmente limpio. LSV SetList fue pensada para eso:
+            ayudarte a llegar con el show mejor ordenado, reducir errores y mantener el control del repertorio aún
+            cuando hay cambios de último momento.
+          </p>
+          <div class="list">
+            <div class="item">
+              <div class="item__mark">1</div>
+              <div>
+                <strong data-i18n="live_item_1_title">Ensayos</strong>
+                <span data-i18n="live_item_1_copy">Reordena, prueba variantes y detecta faltantes sin perder
+                  tiempo.</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__mark">2</div>
+              <div>
+                <strong data-i18n="live_item_2_title">Escenario</strong>
+                <span data-i18n="live_item_2_copy">Mantené el repertorio claro y fácil de consultar por todo el
+                  equipo.</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__mark">3</div>
+              <div>
+                <strong data-i18n="live_item_3_title">Preproducción</strong>
+                <span data-i18n="live_item_3_copy">Compartí versiones prolijas del show con dirección musical, banda o
+                  producción.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="card compat">
+        <div>
+          <p class="eyebrow" data-i18n="compat_eyebrow">Compatibilidad</p>
+          <h2 class="section-title" data-i18n="compat_title">La misma herramienta en iPhone, iPad, Android y macOS.</h2>
+          <p class="section-copy" data-i18n="compat_copy">
+            Trasladá tus shows y tus listas de artistas entre cualquier dispositivo para trabajar con comodidad sea
+            donde sea que estés.
+          </p>
+          <div class="platforms">
+            <span class="platform">iPhone</span>
+            <span class="platform">iPad</span>
+            <span class="platform">Android</span>
+            <span class="platform">macOS</span>
+            <span class="platform" data-i18n="compat_platform_lang">Español e inglés</span>
+            <span class="platform" data-i18n="compat_platform_same">Misma experiencia principal</span>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a class="cta cta--primary" href="https://apps.apple.com/co/app/lsv-setlist/id6743781110" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./apple.png" alt="" />
+            <span class="cta__text" data-i18n="cta_apple_secondary">Descargar para Apple</span>
+          </a>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.leonsonidovirtual.lsvsetlistpaid"
+            target="_blank" rel="noopener noreferrer">
+            <img src="./google.png" alt="" />
+            <span class="cta__text" data-i18n="cta_android_secondary">Descargar para Android</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow" data-i18n="showcase_eyebrow">Vistas de muestra</p>
+        <h2 class="section-title" data-i18n="showcase_title">Mirá cómo se ve LSV SetList en iPhone, Tablet y Mac con
+          chip Silicon.</h2>
+
+        <div class="grid grid-3">
+          <article class="card showcase-card">
+            <span class="showcase-label" data-i18n="showcase_label_iphone">Vista iPhone</span>
+
+            <div class="showcase-media">
+              <img src="./chicacantanteconiphone.png" alt="Mockup de LSV SetList en iPhone" />
+            </div>
+            <div class="showcase-thumbs">
+              <div class="showcase-thumb">
+                <img src="./ios2.png" alt="Pantalla de LSV SetList en iPhone" />
+              </div>
+              <div class="showcase-thumb">
+                <img src="./ios6.png" alt="Otra pantalla de LSV SetList en iPhone" />
+              </div>
+            </div>
+          </article>
+
+          <article class="card showcase-card">
+            <span class="showcase-label" data-i18n="showcase_label_tablet">Vista Tablet</span>
+
+            <div class="showcase-media">
+              <img src="./productorcontablet.png" alt="Mockup de LSV SetList en tablet" />
+            </div>
+            <div class="showcase-thumbs">
+              <div class="showcase-thumb">
+                <img src="./tablet1.png" alt="Pantalla de LSV SetList en tablet" />
+              </div>
+              <div class="showcase-thumb">
+                <img src="./tablet3.png" alt="Otra pantalla de LSV SetList en tablet" />
+              </div>
+            </div>
+          </article>
+
+          <article class="card showcase-card">
+            <span class="showcase-label" data-i18n="showcase_label_mac">Vista Mac Silicon</span>
+
+            <div class="showcase-media">
+              <img src="./macInicial.png" alt="Mockup de LSV SetList en Mac con chip Silicon" />
+            </div>
+            <div class="showcase-thumbs">
+              <div class="showcase-thumb">
+                <img src="./mac1.png" alt="Pantalla de LSV SetList en Mac con chip Silicon" />
+              </div>
+              <div class="showcase-thumb">
+                <img src="./mac3.png" alt="Otra pantalla de LSV SetList en Mac con chip Silicon" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid grid-3">
+        <article class="card quote">
+          <p data-i18n="quote_1">
+            "Lo que más me sirve es no tener que volver a armar todo desde cero. Reutilizo canciones, ajusto el orden y
+            en minutos tengo el show listo."
+          </p>
+          <footer data-i18n="quote_1_author">Mariana G. · Cantante</footer>
+        </article>
+        <article class="card quote">
+          <p data-i18n="quote_2">
+            "La parte de exportar PDF y dejar todo prolijo para compartir con la banda o producción suma muchísimo."
+          </p>
+          <footer data-i18n="quote_2_author">Nico R. · Director musical</footer>
+        </article>
+        <article class="card quote">
+          <p data-i18n="quote_3">
+            "Se nota que está hecha con criterio de trabajo real. No es solo para escribir canciones, es para organizar
+            mejor el vivo."
+          </p>
+          <footer data-i18n="quote_3_author">Pablo T. · Técnico de escenario</footer>
+        </article>
+      </section>
+
+      <section class="card closing">
+        <p class="eyebrow" data-i18n="download_eyebrow">Descarga</p>
+
+        <div class="cta-row" style="justify-content:center;">
+          <a class="cta cta--primary" href="https://apps.apple.com/co/app/lsv-setlist/id6743781110" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./apple.png" alt="" />
+            <span class="cta__text" data-i18n="cta_apple_footer">Descargar para iPhone y iPad</span>
+          </a>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.leonsonidovirtual.lsvsetlistpaid"
+            target="_blank" rel="noopener noreferrer">
+            <img src="./google.png" alt="" />
+            <span class="cta__text" data-i18n="cta_android_footer">Descargar para Android</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card footer-panel">
+        <div class="footer-grid">
+          <section class="footer-block" aria-labelledby="footer-escuela">
+            <h2 class="footer-title" id="footer-escuela" data-i18n="footer_school_title">Escuela Online</h2>
+            <div class="footer-links">
+              <a class="footer-link" href="https://www.patreon.com/c/leonsonidovirtual/about" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_school_link_1">Mi Escuela de León Sonido Virtual</span>
+              </a>
+              <a class="footer-link" href="https://leonsonidovirtualpro.com/" target="_blank" rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_school_link_2">Web oficial</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="footer-block" aria-labelledby="footer-redes">
+            <h2 class="footer-title" id="footer-redes" data-i18n="footer_social_title">Redes</h2>
+            <div class="footer-links">
+              <a class="footer-link" href="https://www.instagram.com/leonsonidovirtual/?hl=es-la" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_social_link_1">Instagram</span>
+              </a>
+              <a class="footer-link" href="https://www.youtube.com/user/focklorepatagonico/videos" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_social_link_2">YouTube</span>
+              </a>
+              <a class="footer-link" href="https://www.tiktok.com/@leonsonidovirtual" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_social_link_3">TikTok</span>
+              </a>
+              <a class="footer-link" href="https://www.facebook.com/LeonSonidoVirtual" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_social_link_4">Facebook</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="footer-block" aria-labelledby="footer-comunidad">
+            <h2 class="footer-title" id="footer-comunidad" data-i18n="footer_community_title">Comunidad</h2>
+            <div class="footer-links">
+              <a class="footer-link" href="https://discord.gg/8hySTNBrT" target="_blank" rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_community_link_1">Discord</span>
+              </a>
+              <a class="footer-link" href="https://www.instagram.com/channel/AbbCeqgXwew3uabE/" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_community_link_2">Canal de Instagram</span>
+              </a>
+              <a class="footer-link" href="https://whatsapp.com/channel/0029Va9RkUBG3R3oxCRSuF0r" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_community_link_3">Canal de WhatsApp</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="footer-block" aria-labelledby="footer-podcast">
+            <h2 class="footer-title" id="footer-podcast" data-i18n="footer_podcast_title">Podcast y más</h2>
+            <div class="footer-links">
+              <a class="footer-link" href="https://anchor.fm/leonsonidovirtual" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_podcast_link_1">Podcast León Sonido Virtual</span>
+              </a>
+              <a class="footer-link" href="https://www.leonsonidovirtual.org/politicas.html" target="_blank"
+                rel="noopener noreferrer">
+                <span class="footer-link__mark">↗</span>
+                <span data-i18n="footer_podcast_link_2">Política de privacidad</span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <div class="footer-meta">
+          <span>LSV SetList</span>
+          <span data-i18n="footer_meta_brand">León Sonido Virtual</span>
+          <span data-i18n="footer_meta_tagline">Herramientas para shows en vivo</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span data-i18n="footer_bottom">LSV SetList · León Sonido Virtual</span>
+      </footer>
+    </div>
+  </main>
+  <script>
+    const translations = {
+      es: {
+        meta_title: "LSV SetList | App para organizar shows en vivo y exportar setlists en PDF",
+        meta_description:
+          "LSV SetList es la app para crear setlists, organizar shows en vivo, reutilizar repertorios y exportar PDFs profesionales desde iPhone, iPad, Android y macOS.",
+        meta_keywords:
+          "LSV SetList, app setlist, setlist para músicos, app para cantantes, setlist para shows en vivo, setlist para directores musicales, exportar setlist PDF, organizar repertorios, repertorios por artista, León Sonido Virtual",
+        meta_site_name: "León Sonido Virtual",
+        meta_og_title: "LSV SetList | App para organizar shows en vivo y exportar setlists en PDF",
+        meta_og_description:
+          "Creá shows, reutilizá canciones, organizá repertorios por artista y exportá setlists profesionales en PDF. Disponible para iPhone, iPad, Android y macOS.",
+        meta_twitter_title: "LSV SetList | App para organizar shows en vivo y exportar setlists en PDF",
+        meta_twitter_description:
+          "La app para crear setlists, reutilizar repertorios y exportar PDFs profesionales para shows en vivo.",
+        brand_name: "León Sonido Virtual",
+        brand_platforms: "App para iPhone, iPad, Android y macOS",
+        badge_live: "Shows en vivo",
+        badge_org: "Organización profesional",
+        badge_pdf: "PDFs listos",
+        hero_title: "Armá setlists profesionales en minutos.",
+        hero_lead:
+          "LSV SetList te ayuda a crear, organizar, reutilizar y exportar shows completos sin tener que empezar desde cero cada vez. Pensada para músicos, cantantes, directores musicales, técnicos y equipos de producción que necesitan orden, velocidad y claridad real.",
+        hero_point_1: "Prepará shows más rápido y con menos fricción.",
+        hero_point_2: "Reutilizá repertorios y canciones ya configuradas.",
+        hero_point_3: "Exportá PDFs prolijos y compartilos al instante.",
+        cta_apple_main: "Descargar para iPhone y iPad",
+        cta_android_main: "Descargar para Android",
+        cta_note: "Disponible en español e inglés. Misma experiencia en iPhone, iPad y Android.",
+        problem_eyebrow: "Problema",
+        problem_title: "Preparar un show no debería ser una tarea repetitiva.",
+        problem_copy:
+          "Muchos músicos, cantantes y equipos de producción siguen armando setlists de forma manual: copiando canciones, repitiendo notas, reescribiendo comentarios, reorganizando repertorios y exportando todo a último momento. Eso consume tiempo, genera errores y vuelve más desordenada la preparación del vivo.",
+        solution_eyebrow: "Solución",
+        solution_title: "LSV SetList convierte todo ese caos en un flujo claro.",
+        solution_copy:
+          "La app te permite crear, reutilizar, editar, duplicar, exportar e imprimir setlists profesionales en minutos. No es solo una app para escribir canciones: es una herramienta para agilizar la preparación de shows, mantener el orden del escenario y compartir información de forma prolija con todo el equipo.",
+        features_eyebrow: "Funciones destacadas",
+        features_title: "Lo esencial para construir un show mejor organizado.",
+        features_intro:
+          "LSV SetList te permite agregar a cada canción la información que realmente hace falta para trabajar con claridad:",
+        features_li_1: "Título",
+        features_li_2: "Comentarios",
+        features_li_3: "Nota o tono musical",
+        features_li_4: "Duración",
+        features_li_5: "Colores personalizados para título y comentarios",
+        features_li_6: "Separaciones con texto y color para ordenar mejor el show",
+        reuse_eyebrow: "Reutilización inteligente",
+        reuse_title: "No vuelvas a cargar lo mismo desde cero.",
+        reuse_intro:
+          "Guardá canciones reutilizables por artista, agregá temas ya existentes a nuevos shows y mantené cada repertorio bajo control.",
+        reuse_li_1: "Múltiples artistas con sus propias listas guardadas",
+        reuse_li_2: "Editar y eliminar canciones guardadas",
+        reuse_li_3: "Duplicar canciones dentro del setlist",
+        reuse_li_4: "Duplicar shows completos",
+        reuse_li_5: "Check visual para saber qué canciones ya están agregadas",
+        reuse_li_6: "Detección de repetidos con confirmación antes de agregarlos otra vez",
+        export_eyebrow: "Exportación profesional",
+        export_title: "Pasá de la organización interna a un PDF listo para usar.",
+        export_copy:
+          "La app exporta e importa shows completos entre dispositivos, y también permite compartir listas de canciones guardadas por artista. Cuando necesitás una salida profesional, podés generar PDFs listos para ensayo, escenario o producción.",
+        export_item_1_title: "PDF prolijo y completo",
+        export_item_1_copy:
+          "Portada, título del show, fecha, canciones, comentarios, tono, duración por canción y duración total.",
+        export_item_2_title: "Mejor uso del espacio",
+        export_item_2_copy:
+          "Ajustá el tamaño de letra para adaptar el PDF al tipo de show o formato que necesites.",
+        export_item_3_title: "Compartir sin fricción",
+        export_item_3_copy: "Ideal para mover repertorios entre dispositivos y equipos de trabajo.",
+        live_eyebrow: "Trabajo en vivo",
+        live_title: "Hecha para el ritmo real del escenario y la preproducción.",
+        live_copy:
+          "En vivo se necesita tener todo claro, rápido y visualmente limpio. LSV SetList fue pensada para eso: ayudarte a llegar con el show mejor ordenado, reducir errores y mantener el control del repertorio aún cuando hay cambios de último momento.",
+        live_item_1_title: "Ensayos",
+        live_item_1_copy: "Reordena, prueba variantes y detecta faltantes sin perder tiempo.",
+        live_item_2_title: "Escenario",
+        live_item_2_copy: "Mantené el repertorio claro y fácil de consultar por todo el equipo.",
+        live_item_3_title: "Preproducción",
+        live_item_3_copy: "Compartí versiones prolijas del show con dirección musical, banda o producción.",
+        compat_eyebrow: "Compatibilidad",
+        compat_title: "La misma herramienta en iPhone, iPad, Android y macOS.",
+        compat_copy:
+          "Trasladá tus shows y tus listas de artistas entre cualquier dispositivo para trabajar con comodidad, estés donde estés.",
+        compat_platform_lang: "Español e inglés",
+        compat_platform_same: "Misma experiencia principal",
+        cta_apple_secondary: "Descargar para Apple",
+        cta_android_secondary: "Descargar para Android",
+        showcase_eyebrow: "Vistas de muestra",
+        showcase_title: "Mirá cómo se ve LSV SetList en iPhone, Tablet y Mac con chip Silicon.",
+        showcase_label_iphone: "Vista iPhone",
+        showcase_label_tablet: "Vista Tablet",
+        showcase_label_mac: "Vista Mac Silicon",
+        quote_1:
+          "\"Lo que más me sirve es no tener que volver a armar todo desde cero. Reutilizo canciones, ajusto el orden y en minutos tengo el show listo.\"",
+        quote_1_author: "Mariana G. · Cantante",
+        quote_2:
+          "\"La parte de exportar PDF y dejar todo prolijo para compartir con la banda o producción suma muchísimo.\"",
+        quote_2_author: "Nico R. · Director musical",
+        quote_3:
+          "\"Se nota que está hecha con criterio de trabajo real. No es solo para escribir canciones, es para organizar mejor el vivo.\"",
+        quote_3_author: "Pablo T. · Técnico de escenario",
+        download_eyebrow: "Descarga",
+        cta_apple_footer: "Descargar para iPhone y iPad",
+        cta_android_footer: "Descargar para Android",
+        footer_school_title: "Escuela Online",
+        footer_school_link_1: "Mi Escuela de León Sonido Virtual",
+        footer_school_link_2: "Web oficial",
+        footer_social_title: "Redes",
+        footer_social_link_1: "Instagram",
+        footer_social_link_2: "YouTube",
+        footer_social_link_3: "TikTok",
+        footer_social_link_4: "Facebook",
+        footer_community_title: "Comunidad",
+        footer_community_link_1: "Discord",
+        footer_community_link_2: "Canal de Instagram",
+        footer_community_link_3: "Canal de WhatsApp",
+        footer_podcast_title: "Podcast y más",
+        footer_podcast_link_1: "Podcast León Sonido Virtual",
+        footer_podcast_link_2: "Política de privacidad",
+        footer_meta_brand: "León Sonido Virtual",
+        footer_meta_tagline: "Herramientas para shows en vivo",
+        footer_bottom: "LSV SetList · León Sonido Virtual"
+      },
+      en: {
+        meta_title: "LSV SetList | App to organize live shows and export PDF setlists",
+        meta_description:
+          "LSV SetList is the app to create setlists, organize live shows, reuse repertoires, and export professional PDFs from iPhone, iPad, Android, and macOS.",
+        meta_keywords:
+          "LSV SetList, setlist app, setlist for musicians, setlist for singers, setlist for musical directors, live show setlist, export PDF setlist, organize repertoires, artist song lists, Leon Sonido Virtual",
+        meta_site_name: "Leon Sonido Virtual",
+        meta_og_title: "LSV SetList | App to organize live shows and export PDF setlists",
+        meta_og_description:
+          "Create shows, reuse songs, organize repertoires by artist, and export professional PDF setlists. Available for iPhone, iPad, Android, and macOS.",
+        meta_twitter_title: "LSV SetList | App to organize live shows and export PDF setlists",
+        meta_twitter_description:
+          "The app to create setlists, reuse repertoires, and export professional PDFs for live shows.",
+        brand_name: "Leon Sonido Virtual",
+        brand_platforms: "App for iPhone, iPad, Android, and macOS",
+        badge_live: "Live shows",
+        badge_org: "Professional organization",
+        badge_pdf: "Ready-to-use PDFs",
+        hero_title: "Build professional setlists in minutes.",
+        hero_lead:
+          "LSV SetList helps you create, organize, reuse, and export complete shows without starting from scratch every time. Built for musicians, singers, musical directors, technicians, and production teams that need real order, speed, and clarity.",
+        hero_point_1: "Prepare shows faster with less friction.",
+        hero_point_2: "Reuse repertoires and songs that are already configured.",
+        hero_point_3: "Export polished PDFs and share them instantly.",
+        cta_apple_main: "Download for iPhone and iPad",
+        cta_android_main: "Download for Android",
+        cta_note: "Available in Spanish and English. Same experience on iPhone, iPad, and Android.",
+        problem_eyebrow: "Problem",
+        problem_title: "Preparing a show should not be repetitive work.",
+        problem_copy:
+          "Many musicians, singers, and production teams still build setlists manually: copying songs, repeating notes, rewriting comments, reorganizing repertoires, and exporting everything at the last minute. That wastes time, creates errors, and makes live show preparation more chaotic.",
+        solution_eyebrow: "Solution",
+        solution_title: "LSV SetList turns all that chaos into a clear workflow.",
+        solution_copy:
+          "The app lets you create, reuse, edit, duplicate, export, and print professional setlists in minutes. It is not just an app for writing songs: it is a tool to speed up show preparation, keep the stage organized, and share information clearly with the entire team.",
+        features_eyebrow: "Key features",
+        features_title: "Everything essential to build a better organized show.",
+        features_intro:
+          "LSV SetList lets you add the information that actually matters to each song so you can work clearly:",
+        features_li_1: "Title",
+        features_li_2: "Comments",
+        features_li_3: "Key or musical note",
+        features_li_4: "Duration",
+        features_li_5: "Custom colors for titles and comments",
+        features_li_6: "Separators with text and color to organize the show better",
+        reuse_eyebrow: "Smart reuse",
+        reuse_title: "Stop loading the same material from scratch.",
+        reuse_intro:
+          "Save reusable songs by artist, add existing tracks to new shows, and keep every repertoire under control.",
+        reuse_li_1: "Multiple artists with their own saved song lists",
+        reuse_li_2: "Edit and delete saved songs",
+        reuse_li_3: "Duplicate songs inside the setlist",
+        reuse_li_4: "Duplicate full shows",
+        reuse_li_5: "Visual check to know which songs are already added",
+        reuse_li_6: "Duplicate detection with confirmation before adding again",
+        export_eyebrow: "Professional export",
+        export_title: "Go from internal organization to a ready-to-use PDF.",
+        export_copy:
+          "The app exports and imports complete shows between devices, and also lets you share saved song lists by artist. When you need a professional output, you can generate PDFs ready for rehearsal, stage use, or production.",
+        export_item_1_title: "Clean and complete PDF",
+        export_item_1_copy:
+          "Cover page, show title, date, songs, comments, key, song duration, and total running time.",
+        export_item_2_title: "Better use of space",
+        export_item_2_copy:
+          "Adjust the font size to fit the PDF to the type of show or format you need.",
+        export_item_3_title: "Share without friction",
+        export_item_3_copy: "Ideal for moving repertoires between devices and work teams.",
+        live_eyebrow: "Live workflow",
+        live_title: "Built for the real pace of the stage and pre-production.",
+        live_copy:
+          "Live work demands everything to be clear, fast, and visually clean. LSV SetList was built for that: helping you arrive with the show better organized, reduce mistakes, and keep control of the repertoire even when last-minute changes happen.",
+        live_item_1_title: "Rehearsals",
+        live_item_1_copy: "Reorder, test variations, and detect missing items without wasting time.",
+        live_item_2_title: "Stage",
+        live_item_2_copy: "Keep the repertoire clear and easy for the whole team to check.",
+        live_item_3_title: "Pre-production",
+        live_item_3_copy: "Share polished versions of the show with musical direction, band, or production.",
+        compat_eyebrow: "Compatibility",
+        compat_title: "The same tool on iPhone, iPad, Android, and macOS.",
+        compat_copy:
+          "Move your shows and artist lists between any device so you can work comfortably wherever you are.",
+        compat_platform_lang: "Spanish and English",
+        compat_platform_same: "Same core experience",
+        cta_apple_secondary: "Download for Apple",
+        cta_android_secondary: "Download for Android",
+        showcase_eyebrow: "Preview views",
+        showcase_title: "See how LSV SetList looks on iPhone, Tablet, and Mac with Apple Silicon.",
+        showcase_label_iphone: "iPhone view",
+        showcase_label_tablet: "Tablet view",
+        showcase_label_mac: "Mac Silicon view",
+        quote_1:
+          "\"What helps me most is not having to rebuild everything from scratch. I reuse songs, adjust the order, and the show is ready in minutes.\"",
+        quote_1_author: "Mariana G. · Singer",
+        quote_2:
+          "\"Exporting a PDF and leaving everything polished to share with the band or production adds a lot of value.\"",
+        quote_2_author: "Nico R. · Musical director",
+        quote_3:
+          "\"You can tell it was built with real-world workflow in mind. It is not just for writing songs, it is for organizing the live show better.\"",
+        quote_3_author: "Pablo T. · Stage technician",
+        download_eyebrow: "Download",
+        cta_apple_footer: "Download for iPhone and iPad",
+        cta_android_footer: "Download for Android",
+        footer_school_title: "Online school",
+        footer_school_link_1: "My León Sonido Virtual School",
+        footer_school_link_2: "Official website",
+        footer_social_title: "Social",
+        footer_social_link_1: "Instagram",
+        footer_social_link_2: "YouTube",
+        footer_social_link_3: "TikTok",
+        footer_social_link_4: "Facebook",
+        footer_community_title: "Community",
+        footer_community_link_1: "Discord",
+        footer_community_link_2: "Instagram channel",
+        footer_community_link_3: "WhatsApp channel",
+        footer_podcast_title: "Podcast and more",
+        footer_podcast_link_1: "León Sonido Virtual Podcast",
+        footer_podcast_link_2: "Privacy policy",
+        footer_meta_brand: "Leon Sonido Virtual",
+        footer_meta_tagline: "Tools for live shows",
+        footer_bottom: "LSV SetList · Leon Sonido Virtual"
+      }
+    };
+
+    const metaMap = {
+      meta_title: document.querySelector("title"),
+      meta_description: document.getElementById("meta-description"),
+      meta_keywords: document.getElementById("meta-keywords"),
+      meta_site_name: document.getElementById("meta-og-site-name"),
+      meta_og_title: document.getElementById("meta-og-title"),
+      meta_og_description: document.getElementById("meta-og-description"),
+      meta_twitter_title: document.getElementById("meta-twitter-title"),
+      meta_twitter_description: document.getElementById("meta-twitter-description")
+    };
+
+    const toggleButton = document.getElementById("lang-toggle");
+
+    function applyLanguage(lang) {
+      const content = translations[lang];
+      document.documentElement.lang = lang === "en" ? "en" : "es-CO";
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (content[key]) {
+          element.textContent = content[key];
+        }
+      });
+
+      Object.entries(metaMap).forEach(([key, element]) => {
+        if (!element || !content[key]) return;
+        if (element.tagName === "TITLE") {
+          element.textContent = content[key];
+        } else {
+          element.setAttribute("content", content[key]);
+        }
+      });
+
+      toggleButton.textContent = lang === "es" ? "Language: EN" : "Idioma: ES";
+      toggleButton.setAttribute("aria-label", lang === "es" ? "Switch to English" : "Cambiar a español");
+      localStorage.setItem("lsv-setlist-lang", lang);
+    }
+
+    const initialLanguage = localStorage.getItem("lsv-setlist-lang") === "en" ? "en" : "es";
+    applyLanguage(initialLanguage);
+
+    toggleButton.addEventListener("click", () => {
+      const nextLanguage = document.documentElement.lang === "en" ? "es" : "en";
+      applyLanguage(nextLanguage);
+    });
+  </script>
+</body>
+
+</html>
